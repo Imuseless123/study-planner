@@ -10,6 +10,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ConsentPage from './pages/ConsentPage';
 import DashboardPage from './pages/DashboardPage';
+import LoggingPage from './pages/LoggingPage';
 
 export default function App() {
   return (
@@ -25,13 +26,11 @@ export default function App() {
       <AntdApp>
         <BrowserRouter>
           <Routes>
-            {/* Auth routes (không cần đăng nhập) */}
             <Route element={<AuthLayout />}>
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
             </Route>
 
-            {/* Consent page (cần đăng nhập, không cần consent) */}
             <Route
               path="/consent"
               element={
@@ -41,7 +40,6 @@ export default function App() {
               }
             />
 
-            {/* App routes (cần đăng nhập + consent) */}
             <Route
               element={
                 <ProtectedRoute requireConsent>
@@ -51,14 +49,12 @@ export default function App() {
             >
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<DashboardPage />} />
-              {/* Các routes khác sẽ bổ sung sau */}
-              <Route path="/logging" element={<PlaceholderPage title="Ghi nhật ký" />} />
+              <Route path="/logging" element={<LoggingPage />} />
               <Route path="/subjects" element={<PlaceholderPage title="Môn học" />} />
               <Route path="/schedule" element={<PlaceholderPage title="Lịch học" />} />
               <Route path="/settings" element={<PlaceholderPage title="Cài đặt" />} />
             </Route>
 
-            {/* 404 */}
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
           </Routes>
         </BrowserRouter>
@@ -67,7 +63,6 @@ export default function App() {
   );
 }
 
-// Placeholder tạm cho các trang chưa làm
 function PlaceholderPage({ title }: { title: string }) {
   return (
     <div style={{ padding: 40, textAlign: 'center', color: '#999' }}>

@@ -12,6 +12,7 @@ class DashboardService:
 
     def get_summary(self, user_id: str) -> dict:
         study_by_date = self.log_repo.get_study_hours_last_n_days(user_id, 7)
+        study_matrix = self.log_repo.get_study_hours_matrix(user_id, 7)
         sleep_hours = self.log_repo.get_sleep_hours_last_n_days(user_id, 7)
 
         assignments = self.assignment_repo.list_upcoming(user_id, days=30)
@@ -19,6 +20,7 @@ class DashboardService:
 
         return {
             "study_hours_by_date": study_by_date,
+            "study_hours_matrix": study_matrix,
             "sleep_hours_recent": sleep_hours,
             "upcoming_assignments": [
                 {
