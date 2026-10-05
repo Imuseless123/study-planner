@@ -24,9 +24,9 @@ curl -s http://localhost:8000/health | jq
 
 ## 🏗️ Kiến trúc
 
-- **Tầng 1:** Web App (React + FastAPI + PostgreSQL) — ✅ hoàn thành core
-- **Tầng 2:** Workload Risk Indicator (rule-based) — ⏳ chưa làm
-- **Tầng 3:** LP Optimization Engine (PuLP) — ⏳ chưa làm
+- **Tầng 1:** Web App (React + FastAPI + PostgreSQL)
+- **Tầng 2:** Workload Risk Indicator (rule-based)
+- **Tầng 3:** LP Optimization Engine (PuLP)
 
 ## 📝 License
 
