@@ -1,0 +1,7 @@
+.assignment-overdue-row {
+  background-color: #fff1f0 !important;
+}
+
+.assignment-overdue-row:hover > td {
+  background-color: #ffccc7 !important;
+}

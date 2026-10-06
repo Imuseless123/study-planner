@@ -5,6 +5,7 @@ import {
   DashboardOutlined,
   EditOutlined,
   BookOutlined,
+  FileTextOutlined,
   CalendarOutlined,
   SettingOutlined,
   LogoutOutlined,
@@ -20,6 +21,7 @@ const MENU_ITEMS = [
   { key: '/dashboard', icon: <DashboardOutlined />, label: <Link to="/dashboard">Dashboard</Link> },
   { key: '/logging', icon: <EditOutlined />, label: <Link to="/logging">Ghi nhật ký</Link> },
   { key: '/subjects', icon: <BookOutlined />, label: <Link to="/subjects">Môn học</Link> },
+  { key: '/assignments', icon: <FileTextOutlined />, label: <Link to="/assignments">Bài tập</Link> },
   { key: '/schedule', icon: <CalendarOutlined />, label: <Link to="/schedule">Lịch học</Link> },
   { key: '/settings', icon: <SettingOutlined />, label: <Link to="/settings">Cài đặt</Link> },
 ];
@@ -60,8 +62,11 @@ export default function AppLayout() {
     ],
   };
 
-  // Chọn menu key dựa trên path
-  const selectedKey = MENU_ITEMS.find((m) => location.pathname.startsWith(m.key))?.key || '/dashboard';
+  const selectedKey =
+    MENU_ITEMS.find((m) => location.pathname.startsWith(m.key))?.key || '/dashboard';
+
+  const currentTitle =
+    MENU_ITEMS.find((m) => m.key === selectedKey)?.label?.props?.children || 'Dashboard';
 
   return (
     <Layout style={{ minHeight: '100vh' }}>
@@ -111,7 +116,7 @@ export default function AppLayout() {
           }}
         >
           <Text strong style={{ fontSize: 16 }}>
-            {MENU_ITEMS.find((m) => m.key === selectedKey)?.label?.props?.children || 'Dashboard'}
+            {currentTitle}
           </Text>
           <Dropdown menu={userMenu} placement="bottomRight">
             <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 }}>

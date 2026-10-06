@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import get_settings
-from app.api import auth, consent, logs, subjects, dashboard
+from app.api import auth, consent, logs, subjects, assignments, dashboard
 
 settings = get_settings()
 
@@ -24,6 +24,7 @@ app.include_router(auth.router)
 app.include_router(consent.router)
 app.include_router(logs.router)
 app.include_router(subjects.router)
+app.include_router(assignments.router)
 app.include_router(dashboard.router)
 
 

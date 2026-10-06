@@ -12,6 +12,7 @@ import ConsentPage from './pages/ConsentPage';
 import DashboardPage from './pages/DashboardPage';
 import LoggingPage from './pages/LoggingPage';
 import SubjectsPage from './pages/SubjectsPage';
+import AssignmentsPage from './pages/AssignmentsPage';
 
 export default function App() {
   return (
@@ -52,6 +53,7 @@ export default function App() {
               <Route path="/dashboard" element={<DashboardPage />} />
               <Route path="/logging" element={<LoggingPage />} />
               <Route path="/subjects" element={<SubjectsPage />} />
+              <Route path="/assignments" element={<AssignmentsPage />} />
               <Route path="/schedule" element={<PlaceholderPage title="Lịch học" />} />
               <Route path="/settings" element={<PlaceholderPage title="Cài đặt" />} />
             </Route>
