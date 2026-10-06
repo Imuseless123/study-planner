@@ -13,14 +13,26 @@ export interface SubjectCreatePayload {
   priority: number;
 }
 
+export interface SubjectUpdatePayload {
+  subject_name?: string;
+  difficulty?: number;
+  priority?: number;
+}
+
 export const subjectsApi = {
   list: () =>
     api
       .get<{ subjects: Subject[] }>('/api/subjects')
       .then((r) => r.data.subjects),
 
+  get: (id: string) =>
+    api.get<Subject>(`/api/subjects/${id}`).then((r) => r.data),
+
   create: (payload: SubjectCreatePayload) =>
     api.post<Subject>('/api/subjects', payload).then((r) => r.data),
+
+  update: (id: string, payload: SubjectUpdatePayload) =>
+    api.put<Subject>(`/api/subjects/${id}`, payload).then((r) => r.data),
 
   delete: (id: string) =>
     api.delete(`/api/subjects/${id}`).then((r) => r.data),

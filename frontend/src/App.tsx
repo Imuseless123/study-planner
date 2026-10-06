@@ -11,6 +11,7 @@ import RegisterPage from './pages/RegisterPage';
 import ConsentPage from './pages/ConsentPage';
 import DashboardPage from './pages/DashboardPage';
 import LoggingPage from './pages/LoggingPage';
+import SubjectsPage from './pages/SubjectsPage';
 
 export default function App() {
   return (
@@ -50,7 +51,7 @@ export default function App() {
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<DashboardPage />} />
               <Route path="/logging" element={<LoggingPage />} />
-              <Route path="/subjects" element={<PlaceholderPage title="Môn học" />} />
+              <Route path="/subjects" element={<SubjectsPage />} />
               <Route path="/schedule" element={<PlaceholderPage title="Lịch học" />} />
               <Route path="/settings" element={<PlaceholderPage title="Cài đặt" />} />
             </Route>
