@@ -40,7 +40,10 @@ Kỳ vọng:
 {"status":"ok","service":"tier-1-web-app"}
 ```
 
-Nếu thấy output này → **backend đang chạy**. Xong.
+Nếu thấy output này → **backend đang chạy**. Mở tiếp:
+
+- **Backend Swagger:** http://localhost:8000/docs
+- **Frontend:** http://localhost:3000
 
 ---
 
@@ -84,13 +87,13 @@ EOF
 
 ⚠️ **Lưu ý:** Không commit file `.env` — đã có trong `.gitignore`.
 
-### Bước 3: Build Docker image
+### Bước 3: Build Docker images
 
 ```bash
-docker compose build backend
+docker compose build backend frontend
 ```
 
-Lần đầu mất 2-4 phút (tải base image Python + cài dependencies). Lần sau sẽ nhanh hơn nhờ cache.
+Lần đầu mất 3-5 phút (tải base images + cài dependencies). Lần sau sẽ nhanh hơn nhờ cache.
 
 ### Bước 4: Khởi động PostgreSQL
 
@@ -137,28 +140,35 @@ docker compose exec -T postgres psql -U study_planner -d study_planner -c "\di" 
 
 Kỳ vọng: thấy các index `idx_*`.
 
-### Bước 7: Khởi động backend
+### Bước 7: Khởi động backend + frontend
 
 ```bash
-docker compose up -d backend
+docker compose up -d
 ```
 
-### Bước 8: Verify health
+### Bước 8: Verify services
 
+**Backend:**
 ```bash
 curl -s http://localhost:8000/health | jq
 ```
+Kỳ vọng: `{"status":"ok","service":"tier-1-web-app"}`
 
-Kỳ vọng:
-```json
-{"status":"ok","service":"tier-1-web-app"}
+**Frontend:**
+```bash
+curl -s http://localhost:3000 | head -5
 ```
+Kỳ vọng: `<!DOCTYPE html>...`
 
-### Bước 9: Mở Swagger UI
+### Bước 9: Mở browser
 
-Mở trình duyệt: **http://localhost:8000/docs**
+- **Swagger UI (Backend):** http://localhost:8000/docs
+- **Frontend:** http://localhost:3000
 
-Phải thấy 5 nhóm endpoint: `auth`, `consent`, `logs`, `subjects`, `dashboard`.
+Frontend tự động redirect:
+- Chưa login → `/login`
+- Đã login, chưa consent → `/consent`
+- Đã login + consent → `/dashboard`
 
 ---
 
@@ -179,8 +189,12 @@ docker compose logs -f
 # Chỉ xem log backend
 docker compose logs -f backend
 
+# Chỉ xem log frontend
+docker compose logs -f frontend
+
 # Restart 1 service
 docker compose restart backend
+docker compose restart frontend
 
 # Dừng tất cả (giữ data)
 docker compose down
@@ -190,6 +204,7 @@ docker compose down -v
 
 # Vào shell của container
 docker compose exec backend bash
+docker compose exec frontend sh
 docker compose exec postgres psql -U study_planner -d study_planner
 ```
 
@@ -239,6 +254,230 @@ docker compose exec -T postgres pg_dump -U study_planner study_planner > backup.
 # Restore
 cat backup.sql | docker compose exec -T postgres psql -U study_planner -d study_planner
 ```
+
+---
+
+## 🗄️ Visualize Database
+
+Sau khi database đã có schema (sau Bước 5), bạn có thể xem trực quan bằng **IntelliJ IDEA** hoặc **Visual Studio Code**.
+
+### Connection Parameters
+
+Cả 2 IDE dùng cùng thông số kết nối:
+
+| Field | Value |
+|-------|-------|
+| **Host** | `localhost` |
+| **Port** | `5432` |
+| **Database** | `study_planner` |
+| **User** | `study_planner` |
+| **Password** | `dev_password_change_in_prod` |
+| **URL (JDBC/Postgres)** | `jdbc:postgresql://localhost:5432/study_planner` |
+
+> **Lưu ý:** Host là `localhost` (không phải `postgres`) vì bạn kết nối từ máy host, không phải từ trong Docker network.
+
+---
+
+### 🎯 Cách 1: IntelliJ IDEA (Ultimate)
+
+**Yêu cầu:** IntelliJ IDEA Ultimate (Database tools không có ở Community Edition).
+
+#### Bước 1: Mở Database Tool Window
+
+`View → Tool Windows → Database`
+
+Hoặc: `⌘ ;` (macOS) / `Ctrl + Shift + ;` (Windows/Linux)
+
+#### Bước 2: Thêm Data Source
+
+1. Click biểu tượng **`+`** ở góc trên cùng bên trái
+2. Chọn **`Data Source → PostgreSQL`**
+3. Điền thông số:
+
+   | Field | Value |
+   |-------|-------|
+   | Name | `Study Planner (local)` |
+   | Host | `localhost` |
+   | Port | `5432` |
+   | Database | `study_planner` |
+   | User | `study_planner` |
+   | Password | `dev_password_change_in_prod` |
+
+4. Nếu chưa có PostgreSQL JDBC driver → click **Download** ở dòng "Driver files"
+5. Click **Test Connection**
+   - Nếu thấy **"Succeeded"** → OK
+   - Nếu lỗi `Connection refused` → Postgres chưa chạy: `docker compose up -d postgres`
+6. Click **OK**
+
+#### Bước 3: Khám phá Schema
+
+Trong Database tool window, expand cây:
+
+```
+Study Planner (local)
+└── study_planner
+    └── public
+        ├── tables
+        │   ├── users
+        │   ├── consents
+        │   ├── subjects
+        │   ├── assignments
+        │   ├── study_sessions
+        │   ├── sleep_logs
+        │   ├── mood_logs
+        │   ├── schedules
+        │   └── feedback
+        ├── views
+        └── indexes
+```
+
+Double-click 1 bảng → xem data dạng bảng tính. Tab **DDL** → xem SQL CREATE TABLE.
+
+#### Bước 4 (Bonus): ER Diagram
+
+Chuột phải vào `public` schema → **Diagrams → Show Visualization** (hoặc `⌥⌘U`).
+
+Kết quả: ER diagram trực quan với FK arrows.
+
+---
+
+### 🎯 Cách 2: Visual Studio Code
+
+**Yêu cầu:** Extension **Database Client** hoặc **PostgreSQL** (chọn 1).
+
+#### Option A: Extension "Database Client" (khuyến nghị)
+
+**Cài đặt:**
+1. Mở VS Code
+2. `⌘ Shift X` (Extensions)
+3. Search **`Database Client`** (author: cweijan)
+4. Click **Install**
+
+**Thêm Connection:**
+
+1. Click icon **Database** ở Sidebar (góc trái, icon hình đĩa)
+2. Click **`+`** → chọn **PostgreSQL**
+3. Điền:
+
+   | Field | Value |
+   |-------|-------|
+   | Name | `Study Planner` |
+   | Host | `localhost` |
+   | Port | `5432` |
+   | User | `study_planner` |
+   | Password | `dev_password_change_in_prod` |
+   | Database | `study_planner` |
+
+4. Click **Connect**
+
+**Sử dụng:**
+
+- Expand connection → thấy list tables
+- Click 1 bảng → data hiện dạng bảng tính
+- Chuột phải → **Show Table DDL** để xem CREATE TABLE
+- Toolbar trên cùng: **Run SQL** (icon ▶) để chạy query
+
+**Export/Import:**
+
+- Chuột phải bảng → **Export Data** → chọn JSON/CSV/SQL
+- Chuột phải database → **Import Data** để restore
+
+---
+
+#### Option B: Extension "PostgreSQL" (chính chủ Microsoft)
+
+**Cài đặt:**
+1. Search **`PostgreSQL`** (author: Microsoft)
+2. Install
+
+**Thêm Connection:**
+1. `⌘ Shift P` → `PostgreSQL: Add Connection`
+2. Điền host/port/user/password/database như trên
+3. Connection xuất hiện ở panel **PostgreSQL** (icon voi)
+
+**Hạn chế:** Chỉ query, không có GUI table viewer đẹp bằng Database Client.
+
+---
+
+### 🎯 Cách 3: Extension "SQLTools" (alternative)
+
+**Cài đặt:**
+1. Search **`SQLTools`** (author: Matheus Teixeira)
+2. Install **SQLTools** + **SQLTools PostgreSQL/Cockroach Driver**
+
+**Thêm Connection:**
+1. Click icon SQLTools ở sidebar
+2. Click **Add New Connection** → PostgreSQL
+3. Điền thông số → **Save Connection** → **Connect**
+
+**Ưu điểm:** Hỗ trợ nhiều DB (MySQL, SQLite, MongoDB...), có query history.
+
+---
+
+### 🎯 Cách 4: DBeaver (standalone, đầy đủ nhất)
+
+Nếu muốn GUI chuyên nghiệp hơn IDE:
+
+```bash
+brew install --cask dbeaver-community
+```
+
+**Setup:**
+1. Mở DBeaver → **New Database Connection**
+2. Chọn **PostgreSQL** → Next
+3. Điền host/port/database/user/password
+4. **Test Connection** → **Finish**
+
+**Tính năng mạnh:**
+- ER Diagram tự động (chuột phải database → **View Diagram**)
+- Data export/import nhiều format
+- Query builder trực quan
+- So sánh schema giữa 2 database
+
+---
+
+### 🎯 Cách 5: pgAdmin (web UI, chạy trong Docker)
+
+Nếu muốn web UI, thêm service vào `docker-compose.yml`:
+
+```yaml
+services:
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: study-planner-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+```
+
+Sau đó:
+```bash
+docker compose up -d pgadmin
+open http://localhost:5050
+```
+
+Login: `admin@example.com` / `admin`. Thêm server với host = `postgres` (không phải localhost, vì pgAdmin chạy trong Docker network).
+
+---
+
+### So sánh các công cụ
+
+| Tool | Type | Ưu điểm | Nhược điểm |
+|------|------|---------|------------|
+| **IntelliJ IDEA Ultimate** | IDE integrated | Tích hợp sẵn, ER diagram, refactor | Cần Ultimate license |
+| **VS Code + Database Client** | Extension | Nhẹ, nhanh, GUI đẹp | Ít tính năng hơn DBeaver |
+| **VS Code + PostgreSQL** | Extension | Chính chủ Microsoft | Không có GUI table viewer |
+| **DBeaver** | Standalone | Nhiều tính năng nhất, miễn phí | Nặng hơn, cần cài thêm |
+| **pgAdmin** | Web UI | Không cần cài, truy cập từ xa | Cần chạy thêm container |
+
+**Khuyến nghị:**
+- Dev hàng ngày: **VS Code + Database Client**
+- Xem ER diagram đẹp: **IntelliJ IDEA Ultimate** hoặc **DBeaver**
+- Debug production: **pgAdmin** (chạy trên server)
 
 ---
 
@@ -324,6 +563,7 @@ Lệnh này sẽ chỉ ra dòng lỗi. Sửa indent (dùng spaces, không dùng 
 # Tìm process đang dùng port
 lsof -i :8000
 lsof -i :5432
+lsof -i :3000
 
 # Kill process
 kill -9 <PID>
@@ -387,6 +627,30 @@ curl -s http://localhost:8000/health
 
 ⚠️ **Lưu ý:** Dùng `up -d` (tạo mới), KHÔNG dùng `restart` nếu container chưa tồn tại.
 
+### Lỗi: Frontend báo `Failed to resolve import "X"`
+
+**Nguyên nhân:** Package chưa được cài (thiếu trong `package.json`).
+
+**Fix:**
+```bash
+# Cách 1: Cài trực tiếp trong container
+docker compose exec frontend npm install <package-name>
+
+# Cách 2: Sửa package.json + rebuild
+docker compose up -d --build --force-recreate frontend
+```
+
+### Lỗi: Frontend hiển thị trang trắng
+
+**Chẩn đoán:**
+```bash
+# 1. Xem log frontend
+docker compose logs frontend
+
+# 2. Mở DevTools (F12) → Console tab → xem lỗi
+# 3. Kiểm tra VITE_API_URL trong docker-compose.yml
+```
+
 ---
 
 ## 🔄 Reset toàn bộ (Clean slate)
@@ -401,13 +665,14 @@ docker compose down -v
 docker compose down --rmi local
 
 # 3. Khởi động lại từ đầu
-docker compose build backend
+docker compose build backend frontend
 docker compose up -d postgres
 docker compose run --rm backend alembic upgrade head
-docker compose up -d backend
+docker compose up -d
 
 # 4. Verify
 curl -s http://localhost:8000/health | jq
+curl -s http://localhost:3000 | head -3
 ```
 
 ---
@@ -435,6 +700,8 @@ study-planner/
 │   ├── package.json
 │   └── src/
 ├── docs/                   # Documentation
+│   ├── architecture/       # Kiến trúc hệ thống
+│   │   └── tier-1-overview.md
 │   └── daily-logs/         # Work logs
 └── shared/
     └── scripts/            # Shared utility scripts
@@ -444,13 +711,27 @@ study-planner/
 
 ## 🎯 Ports sử dụng
 
-| Service | Port | URL |
-|---------|------|-----|
-| PostgreSQL | 5432 | `localhost:5432` |
-| Backend API | 8000 | http://localhost:8000 |
-| Swagger UI | 8000 | http://localhost:8000/docs |
-| ReDoc | 8000 | http://localhost:8000/redoc |
-| Frontend | 3000 | http://localhost:3000 (chưa có) |
+| Service | Port | URL | Trạng thái |
+|---------|------|-----|:----------:|
+| PostgreSQL | 5432 | `localhost:5432` | ✅ |
+| **Backend API** | 8000 | http://localhost:8000 | ✅ |
+| Swagger UI | 8000 | http://localhost:8000/docs | ✅ |
+| ReDoc | 8000 | http://localhost:8000/redoc | ✅ |
+| **Frontend** | 3000 | http://localhost:3000 | ✅ |
+
+**Routes của Frontend:**
+
+| Route | Chức năng |
+|-------|-----------|
+| `/login` | Đăng nhập |
+| `/register` | Đăng ký |
+| `/consent` | Ký đồng thuận |
+| `/dashboard` | Trang chủ |
+| `/logging` | Ghi nhật ký (3 tabs) |
+| `/subjects` | Quản lý môn học |
+| `/assignments` | Quản lý bài tập |
+| `/schedule` | Lịch học (chờ Tầng 3) |
+| `/settings` | Cài đặt (chờ FR #14) |
 
 ---
 
@@ -469,25 +750,26 @@ study-planner/
 
 ## ✅ Checklist sau khi setup
 
-- [ ] `docker compose ps` → 2 container healthy
+- [ ] `docker compose ps` → 3 container healthy (postgres, backend, frontend)
 - [ ] `curl /health` → `{"status":"ok"}`
-- [ ] Swagger UI hiển thị 5 nhóm endpoint
+- [ ] `curl http://localhost:3000` → có HTML
+- [ ] Swagger UI hiển thị 6 nhóm endpoint (auth, consent, logs, subjects, assignments, dashboard)
 - [ ] `\dt` trong psql → 10 bảng
 - [ ] `\di` trong psql → có `idx_*` indexes
-- [ ] E2E test pass (register → login → me → subject → log → dashboard)
+- [ ] Database visualized thành công qua IDE (IntelliJ/VS Code)
+- [ ] E2E test pass (register → login → consent → subject → log → dashboard)
 - [ ] Validation test fail đúng (no token → 403, bad difficulty → 422)
 
 ---
 
 ## 📚 Tài liệu liên quan
 
-- `docs/daily-logs/` — Nhật ký công việc hàng ngày
-- `docs/architecture/` — Kiến trúc hệ thống (sẽ bổ sung)
+- [`README.md`](./README.md) — Tổng quan dự án
+- [`docs/architecture/tier-1-overview.md`](./docs/architecture/tier-1-overview.md) — Kiến trúc Tầng 1 (database + dataflow)
+- [`docs/daily-logs/`](./docs/daily-logs/) — Nhật ký công việc hàng ngày
 - `plan.docx` — Kế hoạch tổng thể 12 tuần
-- `README.md` — Tổng quan dự án
 
 ---
 
-**Cập nhật lần cuối:** 2026-10-04
-**Phiên bản:** Tầng 1 (Web Application Layer)
-STARTUPEOF
+**Cập nhật lần cuối:** 2026-10-06
+**Phiên bản:** Tầng 1 (Web Application Layer) — 9/14 FR
