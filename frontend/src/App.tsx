@@ -13,6 +13,7 @@ import DashboardPage from './pages/DashboardPage';
 import LoggingPage from './pages/LoggingPage';
 import SubjectsPage from './pages/SubjectsPage';
 import AssignmentsPage from './pages/AssignmentsPage';
+import SettingsPage from './pages/SettingsPage';
 
 export default function App() {
   return (
@@ -55,7 +56,7 @@ export default function App() {
               <Route path="/subjects" element={<SubjectsPage />} />
               <Route path="/assignments" element={<AssignmentsPage />} />
               <Route path="/schedule" element={<PlaceholderPage title="Lịch học" />} />
-              <Route path="/settings" element={<PlaceholderPage title="Cài đặt" />} />
+              <Route path="/settings" element={<SettingsPage />} />
             </Route>
 
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
