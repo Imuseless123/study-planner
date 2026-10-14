@@ -37,6 +37,20 @@ services:
       sh -c "alembic upgrade head &&
              uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
 
+  risk-indicator:
+    build:
+      context: ./risk-indicator
+      dockerfile: Dockerfile
+    container_name: study-planner-risk-indicator
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./risk-indicator:/app
+    working_dir: /app
+    command: >
+      uvicorn app.main:app --host 0.0.0.0 --port 8001 --reload
+
   frontend:
     build:
       context: ./frontend
