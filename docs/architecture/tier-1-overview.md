@@ -31,6 +31,49 @@ Tầng 1 là **giao diện duy nhất** mà người dùng tương tác trực t
 | **Auth** | JWT (python-jose) + bcrypt | — |
 | **Deploy** | Docker Compose | v2 |
 
+
+🌐 Nhóm Frontend (Giao diện người dùng)
+
+• Frontend (React + TypeScript + Vite):
+
+• React (18.2): Thư viện JavaScript phổ biến nhất hiện nay dùng để xây dựng giao diện người dùng dựa trên các thành phần (components) có thể tái sử dụng.
+
+• TypeScript (5.3): Phiên bản nâng cấp của JavaScript, bổ sung tính năng "định nghĩa kiểu dữ liệu" giúp phát hiện lỗi code ngay khi viết, làm cho dự án an toàn và dễ bảo trì hơn.
+
+• Vite (5.0): Công cụ đóng gói (build tool) thế hệ mới, giúp khởi động môi trường lập trình cực nhanh và tối ưu hóa tốc độ tải trang khi sản phẩm chạy thực tế.
+
+• UI Library (Ant Design 5.12): Bộ thư viện cung cấp sẵn các thành phần giao diện chuẩn doanh nghiệp (như nút bấm, bảng dữ liệu, thanh menu, form nhập liệu, ô lịch...). Giúp lập trình viên không phải tự thiết kế lại từ đầu, đảm bảo giao diện đẹp và nhất quán.
+
+• Chart (Recharts 2.10): Thư viện chuyên dùng để vẽ các biểu đồ (biểu đồ đường, biểu đồ cột, biểu đồ tròn...) dạng động và tương tác tốt trên nền tảng React.
+
+• State (Zustand 4.4): Thư viện quản lý "trạng thái" (dữ liệu chung) của toàn bộ ứng dụng Frontend. Nó giúp các màn hình hoặc thành phần khác nhau có thể dễ dàng chia sẻ và cập nhật dữ liệu qua lại (ví dụ: thông tin người dùng đang đăng nhập) một cách gọn nhẹ, mượt mà.
+
+• HTTP Client (Axios 1.6): Thư viện giúp ứng dụng Frontend gửi các yêu cầu mạng (gọi API) lên Backend để lấy dữ liệu hoặc gửi dữ liệu đi lưu trữ.
+
+⚙️ Nhóm Backend & Database (Xử lý máy chủ & Dữ liệu)
+
+• Backend (FastAPI + Python 0.104 / 3.11):
+
+• FastAPI: Framework xây dựng API bằng Python có tốc độ xử lý cực kỳ nhanh, tự động tạo tài liệu hướng dẫn (Swagger UI) cho các lập trình viên frontend dễ kết nối.
+
+• Python 3.11: Ngôn ngữ lập trình chính chạy ở Backend, phiên bản này được tối ưu hóa hiệu năng vượt trội so với các bản cũ.
+
+• ORM (SQLAlchemy 2.0): Công cụ ánh xạ từ mã code Python sang cơ sở dữ liệu. Thay vì viết các câu lệnh SQL thuần phức tạp, lập trình viên có thể dùng trực tiếp các đối tượng Python (Model) để tương tác với cơ sở dữ liệu.
+
+• Migration (Alembic 1.12): Công cụ quản lý các phiên bản thay đổi của cơ sở dữ liệu. Mỗi khi bạn thêm cột, xóa bảng trong code Python, Alembic sẽ giúp tự động cập nhật cấu trúc đó chính xác vào hệ thống cơ sở dữ liệu thực tế mà không làm mất dữ liệu cũ.
+
+• Database (PostgreSQL 15): Hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) mã nguồn mở rất mạnh mẽ, bảo mật cao, dùng để lưu trữ toàn bộ thông tin của dự án (như người dùng, lịch trình, nhật ký...).
+
+🔐 Nhóm Bảo mật & Triển khai (Security & Deployment)
+
+• Auth (JWT (python-jose) + bcrypt): Hệ thống xác thực và bảo mật người dùng.
+
+• JWT (JSON Web Token): Tạo ra một mã token mã hóa chứa thông tin đăng nhập, cấp cho Frontend để gửi kèm trong mỗi lần gọi API giúp xác định xem người dùng có quyền truy cập không.
+
+• bcrypt: Thư viện mã hóa một chiều, dùng để "băm" mật khẩu của người dùng thành một chuỗi ký tự ngẫu nhiên trước khi lưu vào Database, đảm bảo ngay cả quản trị viên cũng không thấy được mật khẩu gốc.
+
+• Deploy (Docker Compose v2): Công cụ đóng gói toàn bộ ứng dụng (gồm Frontend, Backend, Database) thành các "container" độc lập. Docker giúp hệ thống có thể chạy giống hệt nhau trên mọi máy tính (từ máy lập trình viên cho đến máy chủ sản xuất thực tế) chỉ bằng một câu lệnh duy nhất, tránh lỗi "chạy được trên máy tôi nhưng lỗi trên máy chủ".
+
 ---
 
 ## 🗄️ Cấu trúc Database
@@ -483,8 +526,8 @@ User → Frontend → Backend (Tầng 1)
 
 ### Privacy
 - **Consent:** version + signed_at + expires_at + withdrawn_at
-- **Export:** `GET /api/user/data` (chưa làm)
-- **Delete:** `DELETE /api/user/data` (chưa làm)
+- **Export:** `GET /api/user/data` 
+- **Delete:** `DELETE /api/user/data` 
 - **Disclaimer:** hiển thị cùng mọi risk output (sẵn sàng cho Tầng 2)
 
 ---

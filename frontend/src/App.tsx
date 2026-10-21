@@ -13,18 +13,14 @@ import DashboardPage from './pages/DashboardPage';
 import LoggingPage from './pages/LoggingPage';
 import SubjectsPage from './pages/SubjectsPage';
 import AssignmentsPage from './pages/AssignmentsPage';
+import SchedulePage from './pages/SchedulePage';
 import SettingsPage from './pages/SettingsPage';
 
 export default function App() {
   return (
     <ConfigProvider
       locale={viVN}
-      theme={{
-        token: {
-          colorPrimary: '#667eea',
-          borderRadius: 8,
-        },
-      }}
+      theme={{ token: { colorPrimary: '#667eea', borderRadius: 8 } }}
     >
       <AntdApp>
         <BrowserRouter>
@@ -55,7 +51,7 @@ export default function App() {
               <Route path="/logging" element={<LoggingPage />} />
               <Route path="/subjects" element={<SubjectsPage />} />
               <Route path="/assignments" element={<AssignmentsPage />} />
-              <Route path="/schedule" element={<PlaceholderPage title="Lịch học" />} />
+              <Route path="/schedule" element={<SchedulePage />} />
               <Route path="/settings" element={<SettingsPage />} />
             </Route>
 
@@ -64,14 +60,5 @@ export default function App() {
         </BrowserRouter>
       </AntdApp>
     </ConfigProvider>
-  );
-}
-
-function PlaceholderPage({ title }: { title: string }) {
-  return (
-    <div style={{ padding: 40, textAlign: 'center', color: '#999' }}>
-      <h2>{title}</h2>
-      <p>Tính năng này sẽ được bổ sung ở bước tiếp theo.</p>
-    </div>
   );
 }

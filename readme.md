@@ -36,9 +36,12 @@ curl -s http://localhost:8000/health | jq
 
 ### Kiến trúc
 
-- [Tầng 1 — Web Application Layer](./docs/architecture/tier-1-overview.md) — Database schema, dataflow, API endpoints, security
-- *(Sắp có)* Tầng 2 — Workload Risk Indicator
-- *(Sắp có)* Tầng 3 — LP Optimization Engine
+- [STARTUP.md](./STARTUP.md) — Hướng dẫn khởi động chi tiết
+- [docs/daily-logs/](./docs/daily-logs/) — Nhật ký công việc hàng ngày
+- [docs/architecture/system-architecture.md](./docs/architecture/system-architecture.md) — **Kiến trúc tổng thể hệ thống**
+  - [Tầng 1 — Web App](./docs/architecture/tier-1-overview.md)
+  - [Tầng 2 — Risk Indicator](./docs/architecture/tier-2-overview.md)
+  - [Tầng 3 — LP Solver](./docs/architecture/tier-3-overview.md)
 
 ### Hướng dẫn
 
@@ -62,7 +65,7 @@ Hệ thống gồm **3 tầng chức năng**, giao tiếp qua RESTful API:
                        │ HTTPS
                        ▼
 ┌─────────────────────────────────────────────────────────┐
-│ TẦNG 1: WEB APPLICATION                          ✅ Done │
+│ TẦNG 1: WEB APPLICATION                                 │
 │ - Auth (register/login/logout)                          │
 │ - Consent (sign/withdraw)                               │
 │ - Logging (study/sleep/mood)                            │
@@ -76,7 +79,6 @@ Hệ thống gồm **3 tầng chức năng**, giao tiếp qua RESTful API:
 ┌──────────────────────┐    ┌──────────────────────────┐
 │ TẦNG 2:              │    │ TẦNG 3:                  │
 │ RISK INDICATOR       │───▶│ LP OPTIMIZATION          │
-│ ⏳ Chưa triển khai    │    │ ⏳ Chưa triển khai        │
 │                      │    │                          │
 │ - Rule-based scoring │    │ - MILP với PuLP          │
 │ - 4 components       │    │ - Diminishing returns    │
@@ -87,11 +89,11 @@ Hệ thống gồm **3 tầng chức năng**, giao tiếp qua RESTful API:
 
 ### Trạng thái triển khai
 
-| Tầng | Trạng thái | Tiến độ |
-|------|-----------|---------|
-| **Tầng 1** — Web App | ✅ Hoàn thành | 9/14 FR |
-| **Tầng 2** — Risk Indicator | ⏳ Chưa làm | — |
-| **Tầng 3** — LP Solver | ⏳ Chưa làm | — |
+| Tầng | Chức năng | Tech Stack | Trạng thái |
+|------|-----------|------------|:----------:|
+| **Tầng 1** | Web App — Thu thập dữ liệu, Dashboard | React + FastAPI + PostgreSQL | ✅ |
+| **Tầng 2** | Workload Risk Indicator (rule-based) | FastAPI + Python | ✅ |
+| **Tầng 3** | LP Optimization Engine | FastAPI + PuLP (MILP) | ✅ |
 
 ---
 
@@ -114,24 +116,17 @@ Hệ thống gồm **3 tầng chức năng**, giao tiếp qua RESTful API:
 
 ## 📊 Tiến độ 14 Functional Requirements
 
-| # | Chức năng | Backend | Frontend | Status |
-|---|-----------|:-------:|:--------:|:------:|
-| 1 | Authentication | ✅ | ✅ | ✅ |
-| 2 | Consent | ✅ | ✅ | ✅ |
-| 3 | Log study | ✅ | ✅ | ✅ |
-| 4 | Log sleep | ✅ | ✅ | ✅ |
-| 5 | Log mood | ✅ | ✅ | ✅ |
-| 6 | CRUD subjects | ✅ | ✅ | ✅ |
-| 7 | CRUD assignments | ✅ | ✅ | ✅ |
-| 8 | Dashboard heatmap | ✅ | ✅ | ✅ |
-| 9 | Deadline timeline | ✅ | ✅ | ✅ |
-| 10 | Risk widget | — | — | Tầng 2 |
-| 11 | Schedule generation | — | — | Tầng 3 |
-| 12 | Constraint explanation | — | — | Tầng 3 |
-| 13 | Feedback | — | — | Pending |
-| 14 | Data export/delete | — | — | Pending |
+| # | Chức năng | Status |
+|---|-----------|:------:|
+| 1-5 | Auth, Consent, Logging (Study/Sleep/Mood) | ✅ |
+| 6-7 | CRUD Subjects & Assignments | ✅ |
+| 8-9 | Dashboard Heatmap & Deadline Timeline | ✅ |
+| 10 | Risk Score Widget | ✅ |
+| 11-12 | Schedule Generation & Constraint Explanation | ✅ |
+| 13 | Feedback Rating | ✅ |
+| 14 | Data Export/Delete | ✅ |
 
-**Tiến độ Tầng 1:** 9/14 FR (64%)
+**Tổng:** 14/14 (100%)
 
 ---
 
