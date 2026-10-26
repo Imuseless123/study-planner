@@ -8,6 +8,7 @@ from app.models.orm_models import User
 from app.schemas.auth import (
     RegisterRequest, RegisterResponse,
     LoginRequest, LoginResponse, UserMeResponse,
+    UserSettingsUpdate,
 )
 from app.services.auth_service import AuthService
 
@@ -45,4 +46,23 @@ def me(user: User = Depends(get_current_user)):
         username=user.username,
         email=user.email,
         created_at=user.created_at,
+        usual_bedtime=user.usual_bedtime,
+    )
+
+
+@router.put("/settings", response_model=UserMeResponse)
+def update_settings(
+    req: UserSettingsUpdate,
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    user.usual_bedtime = req.usual_bedtime
+    db.commit()
+    db.refresh(user)
+    return UserMeResponse(
+        user_id=str(user.user_id),
+        username=user.username,
+        email=user.email,
+        created_at=user.created_at,
+        usual_bedtime=user.usual_bedtime,
     )

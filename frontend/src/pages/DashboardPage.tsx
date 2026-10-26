@@ -15,19 +15,29 @@ import WorkloadHeatmap from '../components/WorkloadHeatmap';
 import DeadlineTimeline from '../components/DeadlineTimeline';
 import SleepQualityCard from '../components/SleepQualityCard';
 import RiskScoreWidget from '../components/RiskScoreWidget';
+import QuickMoodBar from '../components/QuickMoodBar';
+import QuickSleepWidget from '../components/QuickSleepWidget';
+import QuickStudyBar from '../components/QuickStudyBar';
+import QuickCreateButtons from '../components/QuickCreateButtons';
+import { subjectsApi, Subject } from '../api/subjects';
 
 const { Title, Text } = Typography;
 
 export default function DashboardPage() {
   const user = useAuthStore((s) => s.user);
   const [data, setData] = useState<DashboardSummary | null>(null);
+  const [subjects, setSubjects] = useState<Subject[]>([]);
   const [loading, setLoading] = useState(true);
 
   const fetchData = useCallback(async () => {
     setLoading(true);
     try {
-      const res = await dashboardApi.summary();
+      const [res, subjList] = await Promise.all([
+        dashboardApi.summary(),
+        subjectsApi.list(),
+      ]);
       setData(res);
+      setSubjects(subjList);
     } catch (err) {
       message.error(getErrorMessage(err));
     } finally {
@@ -115,6 +125,25 @@ export default function DashboardPage() {
         />
       )}
 
+      {/* Quick Inputs — 3 widgets, mobile-first */}
+      <Row gutter={[16, 16]} style={{ marginBottom: 16 }}>
+        <Col xs={24} md={12}>
+          <QuickStudyBar onLogged={fetchData} />
+        </Col>
+        <Col xs={24} md={12}>
+          <QuickMoodBar onLogged={fetchData} />
+        </Col>
+      </Row>
+
+      <Row gutter={[16, 16]} style={{ marginBottom: 16 }}>
+        <Col xs={24} md={12}>
+          <QuickSleepWidget onLogged={fetchData} />
+        </Col>
+        <Col xs={24} md={12}>
+          <QuickCreateButtons subjects={subjects} onRefresh={fetchData} />
+        </Col>
+      </Row>
+
       {/* Statistics Cards */}
       <div style={{ marginBottom: 24 }}>
         <StatisticsCards data={data} />
@@ -143,7 +172,7 @@ export default function DashboardPage() {
       {/* Timeline */}
       <Row gutter={[16, 16]}>
         <Col xs={24}>
-          <DeadlineTimeline data={data} />
+          <DeadlineTimeline data={data} onRefresh={fetchData} />
         </Col>
       </Row>
     </div>

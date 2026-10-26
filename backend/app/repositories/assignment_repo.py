@@ -26,6 +26,7 @@ class AssignmentRepository:
                 Assignment.user_id == user_id,
                 Assignment.deadline >= now,
                 Assignment.deadline <= cutoff,
+                Assignment.is_completed == False,
             )
             .order_by(Assignment.deadline.asc())
             .all()

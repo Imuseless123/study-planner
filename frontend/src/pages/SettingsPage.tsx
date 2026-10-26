@@ -32,6 +32,8 @@ export default function SettingsPage() {
   const [usernameInput, setUsernameInput] = useState('');
   const [confirmChecked, setConfirmChecked] = useState(false);
   const [deleting, setDeleting] = useState(false);
+  const [bedtimeValue, setBedtimeValue] = useState<Dayjs | null>(null);
+  const [savingSettings, setSavingSettings] = useState(false);
 
   // ====== Load data ======
   const fetchData = useCallback(async () => {
@@ -53,6 +55,12 @@ export default function SettingsPage() {
   useEffect(() => {
     fetchData();
   }, [fetchData]);
+
+  useEffect(() => {
+    if (user?.usual_bedtime) {
+      setBedtimeValue(dayjs(`2000-01-01T${user.usual_bedtime}`));
+    }
+  }, [user?.usual_bedtime]);
 
   // ====== Export handlers ======
   const handleExport = async () => {
@@ -96,6 +104,24 @@ export default function SettingsPage() {
       message.error(getErrorMessage(err));
     } finally {
       setDeleting(false);
+    }
+  };
+
+  // ====== Save sleep settings ======
+  const handleSaveBedtime = async () => {
+    if (!bedtimeValue) {
+      message.warning('Vui lòng chọn giờ đi ngủ');
+      return;
+    }
+    setSavingSettings(true);
+    try {
+      const newUser = await authApi.updateSettings(bedtimeValue.format('HH:mm:ss'));
+      useAuthStore.getState().setAuth(useAuthStore.getState().token!, newUser);
+      message.success('Đã lưu giờ đi ngủ');
+    } catch (err) {
+      message.error(getErrorMessage(err));
+    } finally {
+      setSavingSettings(false);
     }
   };
 
@@ -150,6 +176,47 @@ export default function SettingsPage() {
             {user?.created_at ? dayjs(user.created_at).format('DD/MM/YYYY HH:mm') : '—'}
           </Descriptions.Item>
         </Descriptions>
+      </Card>
+
+      {/* ====== Sleep Settings ====== */}
+      <Card
+        title={
+          <Space>
+            <span>🌙</span>
+            <span>Cài đặt giấc ngủ</span>
+          </Space>
+        }
+        size="small"
+        style={{ marginBottom: 24 }}
+      >
+        <Space direction="vertical" size="middle" style={{ width: '100%' }}>
+          <Alert
+            type="info"
+            showIcon
+            message="Giờ đi ngủ thông thường"
+            description="Dùng để tự động tính giờ ngủ khi bạn ghi nhanh chất lượng giấc ngủ ở Dashboard."
+          />
+          <Form layout="inline">
+            <Form.Item label="Giờ đi ngủ">
+              <TimePicker
+                value={bedtimeValue}
+                onChange={setBedtimeValue}
+                format="HH:mm"
+                minuteStep={5}
+                placeholder="VD: 23:00"
+              />
+            </Form.Item>
+            <Form.Item>
+              <Button
+                type="primary"
+                onClick={handleSaveBedtime}
+                loading={savingSettings}
+              >
+                Lưu
+              </Button>
+            </Form.Item>
+          </Form>
+        </Space>
       </Card>
 
       {/* ====== Consent Status ====== */}

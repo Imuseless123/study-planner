@@ -463,7 +463,7 @@ export default function AssignmentsPage() {
               { max: 200, message: 'Tối đa 200 ký tự' },
             ]}
           >
-            <Input placeholder="VD: Bài tập chương 3, Báo cáo thí nghiệm..." />
+            <Input placeholder="VD: Bài tập chương 3, Báo cáo thí nghiệm..." autoFocus />
           </Form.Item>
 
           <Form.Item
@@ -510,7 +510,8 @@ export default function AssignmentsPage() {
           </Row>
 
           <Text type="secondary" style={{ fontSize: 12 }}>
-            💡 Số giờ chuẩn bị và ưu tiên sẽ dùng để tính hệ số hiệu quả trong thuật toán tối ưu lịch học (Tầng 3).
+            💡 Bạn có thể ước lượng ban đầu rồi chỉnh sửa sau — 
+            giờ chuẩn bị và ưu tiên dùng để tối ưu lịch học (Tầng 3).
           </Text>
         </Form>
       </Modal>

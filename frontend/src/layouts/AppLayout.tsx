@@ -2,17 +2,14 @@ import { useState } from 'react';
 import { Outlet, useNavigate, useLocation, Link } from 'react-router-dom';
 import { Layout, Menu, Avatar, Dropdown, Typography, message } from 'antd';
 import {
-  DashboardOutlined,
-  EditOutlined,
-  BookOutlined,
-  FileTextOutlined,
-  CalendarOutlined,
-  SettingOutlined,
-  LogoutOutlined,
-  UserOutlined,
+  DashboardOutlined, EditOutlined, BookOutlined, FileTextOutlined,
+  CalendarOutlined, SettingOutlined, LogoutOutlined, UserOutlined,
 } from '@ant-design/icons';
 import { useAuthStore } from '../store/authStore';
+import { useIsMobile } from '../hooks/useIsMobile';
 import { authApi } from '../api/auth';
+import MobileBottomNav from '../components/MobileBottomNav';
+import QuickActionFab from '../components/QuickActionFab';
 
 const { Header, Sider, Content } = Layout;
 const { Text } = Typography;
@@ -32,13 +29,10 @@ export default function AppLayout() {
   const location = useLocation();
   const user = useAuthStore((s) => s.user);
   const clearAuth = useAuthStore((s) => s.clearAuth);
+  const isMobile = useIsMobile();
 
   const handleLogout = async () => {
-    try {
-      await authApi.logout();
-    } catch {
-      // ignore
-    }
+    try { await authApi.logout(); } catch { /* ignore */ }
     clearAuth();
     message.success('Đã đăng xuất');
     navigate('/login');
@@ -46,95 +40,75 @@ export default function AppLayout() {
 
   const userMenu = {
     items: [
-      {
-        key: 'profile',
-        icon: <UserOutlined />,
-        label: user?.username || 'User',
-        disabled: true,
-      },
+      { key: 'profile', icon: <UserOutlined />, label: user?.username || 'User', disabled: true },
       { type: 'divider' as const },
-      {
-        key: 'logout',
-        icon: <LogoutOutlined />,
-        label: 'Đăng xuất',
-        onClick: handleLogout,
-      },
+      { key: 'logout', icon: <LogoutOutlined />, label: 'Đăng xuất', onClick: handleLogout },
     ],
   };
 
-  const selectedKey =
-    MENU_ITEMS.find((m) => location.pathname.startsWith(m.key))?.key || '/dashboard';
+  const selectedKey = MENU_ITEMS.find((m) => location.pathname.startsWith(m.key))?.key || '/dashboard';
+  const currentTitle = MENU_ITEMS.find((m) => m.key === selectedKey)?.label?.props?.children || 'Dashboard';
 
-  const currentTitle =
-    MENU_ITEMS.find((m) => m.key === selectedKey)?.label?.props?.children || 'Dashboard';
+  // ---- MOBILE LAYOUT ----
+  if (isMobile) {
+    return (
+      <Layout style={{ minHeight: '100vh', background: '#f5f5f5' }}>
+        <Header
+          style={{
+            position: 'sticky', top: 0, zIndex: 10,
+            background: '#fff', borderBottom: '1px solid #f0f0f0',
+            padding: '0 16px',
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            height: 56,
+          }}
+        >
+          <Text strong style={{ fontSize: 16, color: '#667eea' }}>{currentTitle}</Text>
+          <Dropdown menu={userMenu} placement="bottomRight">
+            <Avatar style={{ background: '#667eea', cursor: 'pointer' }}>
+              {user?.username?.[0]?.toUpperCase() || 'U'}
+            </Avatar>
+          </Dropdown>
+        </Header>
+        <Content style={{ padding: 16, paddingBottom: 140, overflow: 'auto' }}>
+          <Outlet />
+        </Content>
+        <QuickActionFab />
+        <MobileBottomNav />
+      </Layout>
+    );
+  }
 
+  // ---- DESKTOP LAYOUT (existing) ----
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Sider
-        collapsible
-        collapsed={collapsed}
-        onCollapse={setCollapsed}
+        collapsible collapsed={collapsed} onCollapse={setCollapsed}
         theme="light"
-        style={{
-          borderRight: '1px solid #f0f0f0',
-          position: 'sticky',
-          top: 0,
-          height: '100vh',
-        }}
+        style={{ borderRight: '1px solid #f0f0f0', position: 'sticky', top: 0, height: '100vh' }}
       >
-        <div
-          style={{
-            height: 64,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            borderBottom: '1px solid #f0f0f0',
-            fontWeight: 600,
-            fontSize: collapsed ? 16 : 18,
-            color: '#667eea',
-          }}
-        >
+        <div style={{
+          height: 64, display: 'flex', alignItems: 'center', justifyContent: 'center',
+          borderBottom: '1px solid #f0f0f0', fontWeight: 600,
+          fontSize: collapsed ? 16 : 18, color: '#667eea',
+        }}>
           {collapsed ? 'SP' : 'Study Planner'}
         </div>
-        <Menu
-          mode="inline"
-          selectedKeys={[selectedKey]}
-          items={MENU_ITEMS}
-          style={{ borderInlineEnd: 'none' }}
-        />
+        <Menu mode="inline" selectedKeys={[selectedKey]} items={MENU_ITEMS} style={{ borderInlineEnd: 'none' }} />
       </Sider>
-
       <Layout>
-        <Header
-          style={{
-            background: '#fff',
-            borderBottom: '1px solid #f0f0f0',
-            padding: '0 24px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-          }}
-        >
-          <Text strong style={{ fontSize: 16 }}>
-            {currentTitle}
-          </Text>
+        <Header style={{
+          background: '#fff', borderBottom: '1px solid #f0f0f0', padding: '0 24px',
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        }}>
+          <Text strong style={{ fontSize: 16 }}>{currentTitle}</Text>
           <Dropdown menu={userMenu} placement="bottomRight">
             <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Avatar style={{ background: '#667eea' }}>
-                {user?.username?.[0]?.toUpperCase() || 'U'}
-              </Avatar>
+              <Avatar style={{ background: '#667eea' }}>{user?.username?.[0]?.toUpperCase() || 'U'}</Avatar>
               <Text>{user?.username}</Text>
             </div>
           </Dropdown>
         </Header>
-
-        <Content
-          style={{
-            padding: 24,
-            background: '#f5f5f5',
-            overflow: 'auto',
-          }}
-        >
+        <Content style={{ padding: 24, background: '#f5f5f5', overflow: 'auto' }}>
           <Outlet />
         </Content>
       </Layout>

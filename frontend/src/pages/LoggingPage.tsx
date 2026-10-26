@@ -1,4 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import {
   Card, Tabs, Row, Col, Table, Tag, Button, Popconfirm,
   Typography, message, Empty, Space, Spin,
@@ -22,6 +23,8 @@ export default function LoggingPage() {
   const [sleepLogs, setSleepLogs] = useState<SleepLogItem[]>([]);
   const [moodLogs, setMoodLogs] = useState<MoodLogItem[]>([]);
   const [loading, setLoading] = useState(true);
+  const [searchParams] = useSearchParams();
+  const initialTab = searchParams.get('tab') || 'study';
 
   const refreshAll = useCallback(async () => {
     setLoading(true);
@@ -45,6 +48,15 @@ export default function LoggingPage() {
 
   useEffect(() => {
     refreshAll();
+  }, [refreshAll]);
+
+  // Refetch when tab becomes visible (user switches from another tab / app)
+  useEffect(() => {
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') refreshAll();
+    };
+    document.addEventListener('visibilitychange', onVisible);
+    return () => document.removeEventListener('visibilitychange', onVisible);
   }, [refreshAll]);
 
   const handleDelete = async (
@@ -339,7 +351,7 @@ export default function LoggingPage() {
       </div>
 
       <Card>
-        <Tabs items={tabs} />
+        <Tabs items={tabs} defaultActiveKey={initialTab} />
       </Card>
     </div>
   );

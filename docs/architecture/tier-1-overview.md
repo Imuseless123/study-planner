@@ -120,6 +120,7 @@ Tầng 1 là **giao diện duy nhất** mà người dùng tương tác trực t
 | `password_hash` | VARCHAR(255) | NOT NULL | Bcrypt cost 12 |
 | `email` | VARCHAR(100) | UNIQUE, NOT NULL | Email |
 | `created_at` | TIMESTAMPTZ | DEFAULT NOW() | Ngày tạo |
+| `usual_bedtime` | TIME | DEFAULT '23:00:00' | Giờ đi ngủ thông thường (Quick Sleep) |
 
 **Indexes:** `users_pkey`, `users_username_key`, `users_email_key`
 
@@ -160,6 +161,7 @@ Tầng 1 là **giao diện duy nhất** mà người dùng tương tác trực t
 | `deadline` | TIMESTAMPTZ | NOT NULL |
 | `required_hours` | NUMERIC(4,2) | CHECK (> 0) |
 | `priority` | INTEGER | CHECK (1-5) |
+| `is_completed` | BOOLEAN | DEFAULT FALSE (Quick mark done) |
 | `created_at` | TIMESTAMPTZ | DEFAULT NOW() |
 
 **Indexes:** `idx_assignments_user_deadline (user_id, deadline)`, `idx_assignments_subject`
@@ -171,6 +173,7 @@ Tầng 1 là **giao diện duy nhất** mà người dùng tương tác trực t
 | `session_id` | UUID | PK |
 | `user_id` | UUID | FK → users (CASCADE) |
 | `subject_id` | UUID | FK → subjects (CASCADE) |
+| `assignment_id` | UUID NULL | FK → assignments (SET NULL) — optional link |
 | `start_time` | TIMESTAMPTZ | NOT NULL |
 | `duration` | NUMERIC(4,2) | CHECK (> 0) |
 | `focus_level` | INTEGER | CHECK (1-5) |
@@ -238,7 +241,7 @@ Tầng 1 là **giao diện duy nhất** mà người dùng tương tác trực t
 | Metric | Số lượng |
 |--------|----------|
 | Bảng | 9 |
-| Foreign Keys | 10 (all CASCADE) |
+| Foreign Keys | 11 (10 CASCADE, 1 SET NULL) |
 | Check Constraints | 11 |
 | Unique Constraints | 4 |
 | Indexes | 11 |
@@ -414,7 +417,7 @@ User → Frontend → Backend (Tầng 1)
 | **subjects** | 5 | CRUD môn học |
 | **assignments** | 6 | CRUD + stats bài tập |
 | **dashboard** | 1 | Summary cho dashboard |
-| **Total** | **28** | |
+| **Total** | **29** | |
 
 ### Chi tiết endpoints
 
@@ -615,7 +618,7 @@ FRONTEND_URL=http://localhost:3000
 | Metric | Count |
 |--------|-------|
 | Tables | 9 |
-| Columns | 58 |
+| Columns | 61 |
 | Foreign Keys | 10 |
 | Check Constraints | 11 |
 | Indexes | 11 |
@@ -676,3 +679,52 @@ FRONTEND_URL=http://localhost:3000
 **Người soạn:** Phạm Kim Long
 **Ngày cập nhật:** 06/10/2026
 **Phiên bản:** 1.0
+---
+
+## 10. Quick Interactions (Mobile-First UX)
+
+Để đáp ứng bối cảnh sinh viên thường log dữ liệu ngay sau khi học xong trên mobile, Tầng 1 cung cấp 4 widget nhập liệu nhanh ngay trên Dashboard:
+
+| Widget | Chức năng | Taps để hoàn thành |
+|--------|-----------|:------------------:|
+| **QuickStudyBar** | Chọn môn (chip) → chọn thời lượng (30m/1h/1.5h/2h) → gắn assignment (optional) | 2 |
+| **QuickMoodBar** | 2 hàng emoji (Năng lượng + Căng thẳng), auto-submit khi đủ 2 | 2 |
+| **QuickSleepWidget** | Chọn chất lượng (1-5 emoji) → auto-compute giờ từ `usual_bedtime` | 1 |
+| **QuickCreateButtons** | Modal rút gọn tạo Subject/Assignment (smart defaults) | 2 |
+
+**Tổng friction:** User log đủ 3 loại dữ liệu (Study/Mood/Sleep) trong **5 taps**.
+
+**So sánh baseline:**
+
+| Hành động | Trước | Sau | Reduction |
+|-----------|:-----:|:---:|:---------:|
+| Log study | 5-6 taps | 2 taps | **-65%** |
+| Log mood | 4 taps | 2 taps | **-50%** |
+| Log sleep | 4 taps | 1 tap | **-75%** |
+| Tạo môn học | 4 taps, 3 fields | 2 taps, 1 field | **-60%** |
+| Tạo bài tập | 6-7 taps, 5 fields | 2 taps, 3 fields | **-55%** |
+
+Chi tiết thiết kế (Fitts's Law, Bottom Nav, FAB, trade-offs): xem [system-architecture.md §7](./system-architecture.md#7-quick-interactions-mobile-first-ux).
+
+---
+
+## 11. Changelog
+
+| Ngày | Phiên bản | Thay đổi chính |
+|------|-----------|----------------|
+| 04/10/2026 | 0.1 | Backend Tầng 1 (14 endpoints, 9 tables) |
+| 05/10/2026 | 0.2 | Frontend Auth + Consent |
+| 05/10/2026 | 0.3 | Logging feature (Study/Sleep/Mood) |
+| 06/10/2026 | 0.4 | CRUD Subjects + Assignments |
+| 06/10/2026 | 1.0 | Dashboard Widgets (heatmap, timeline, sleep, risk placeholder) |
+| 07/10/2026 | 1.1 | Data export/delete (FR #14) |
+| 14/10/2026 | 1.2 | Tier 2 Risk Indicator integration |
+| 19/10/2026 | 1.3 | Tier 3 LP Solver integration (SchedulePage) |
+| 21/10/2026 | 1.4 | Feedback feature (FR #13) — **14/14 FR complete** |
+| 26/10/2026 | 1.5 | Quick Interactions V2 + Assignment linking |
+
+---
+
+**Người soạn:** Phạm Kim Long
+**Ngày cập nhật cuối:** 26/10/2026
+**Phiên bản:** 1.5

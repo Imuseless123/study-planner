@@ -1,8 +1,8 @@
 import uuid
-from datetime import datetime, date
+from datetime import datetime, date, time
 
 from sqlalchemy import (
-    String, Integer, Numeric, Boolean, Date, DateTime,
+    String, Integer, Numeric, Boolean, Date, DateTime, Time,
     ForeignKey, CheckConstraint, UniqueConstraint, Text,
 )
 from sqlalchemy.dialects.postgresql import UUID, JSONB
@@ -29,6 +29,9 @@ class User(Base):
     email: Mapped[str] = mapped_column(String(100), unique=True, nullable=False)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False
+    )
+    usual_bedtime: Mapped[time] = mapped_column(
+        Time, nullable=False, server_default="23:00:00"
     )
 
     subjects = relationship("Subject", back_populates="user", cascade="all, delete-orphan")
@@ -109,6 +112,7 @@ class Assignment(Base):
     deadline: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     required_hours: Mapped[float] = mapped_column(Numeric(4, 2), nullable=False)
     priority: Mapped[int] = mapped_column(Integer, nullable=False)
+    is_completed: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False, server_default="false")
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False
     )
@@ -137,6 +141,11 @@ class StudySession(Base):
         UUID(as_uuid=True),
         ForeignKey("subjects.subject_id", ondelete="CASCADE"),
         nullable=False,
+    )
+    assignment_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("assignments.assignment_id", ondelete="SET NULL"),
+        nullable=True,
     )
     start_time: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     duration: Mapped[float] = mapped_column(Numeric(4, 2), nullable=False)

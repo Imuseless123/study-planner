@@ -6,6 +6,7 @@ from pydantic import BaseModel, Field
 
 class StudyLogRequest(BaseModel):
     subject_id: str
+    assignment_id: str | None = None
     start_time: datetime
     duration: float = Field(gt=0, le=12)
     focus_level: int = Field(ge=1, le=5)

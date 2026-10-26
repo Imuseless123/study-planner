@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import {
-  Card, Table, Button, Modal, Form, Input, InputNumber,
+  Card, Table, Button, Modal, Form, Input, InputNumber, AutoComplete,
   Typography, Space, Popconfirm, Tag, message, Empty,
   Row, Col, Statistic, Alert,
 } from 'antd';
@@ -14,6 +14,13 @@ import { subjectsApi, Subject, SubjectCreatePayload } from '../api/subjects';
 import { getErrorMessage } from '../api/client';
 
 const { Title, Text } = Typography;
+
+const COMMON_SUBJECTS = [
+  'Toán cao cấp', 'Giải tích', 'Đại số tuyến tính',
+  'Vật lý đại cương', 'Hóa đại cương', 'Xác suất thống kê',
+  'Lập trình', 'Cấu trúc dữ liệu', 'Cơ sở dữ liệu',
+  'Tiếng Anh', 'Kinh tế vi mô', 'Triết học',
+];
 
 interface FormValues {
   subject_name: string;
@@ -52,7 +59,7 @@ export default function SubjectsPage() {
   const handleOpenCreate = () => {
     setEditingSubject(null);
     form.resetFields();
-    form.setFieldsValue({ difficulty: 3, priority: 3 });
+    form.setFieldsValue({ difficulty: 3, priority: 3 }); // defaults — user edits later if needed
     setModalOpen(true);
   };
 
@@ -351,7 +358,15 @@ export default function SubjectsPage() {
               { max: 100, message: 'Tối đa 100 ký tự' },
             ]}
           >
-            <Input placeholder="VD: Toán cao cấp, Lập trình Web..." autoFocus />
+            <AutoComplete
+              options={COMMON_SUBJECTS.map((s) => ({ value: s }))}
+              placeholder="VD: Toán cao cấp, Lập trình Web..."
+              filterOption={(input, option) =>
+                (option?.value as string).toLowerCase().includes(input.toLowerCase())
+              }
+            >
+              <Input autoFocus />
+            </AutoComplete>
           </Form.Item>
 
           <Form.Item

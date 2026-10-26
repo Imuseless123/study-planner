@@ -29,6 +29,7 @@ def log_study(
     s = LogRepository(db).create_study_session(
         str(user.user_id), req.subject_id,
         req.start_time, req.duration, req.focus_level,
+        req.assignment_id,
     )
     return StudyLogResponse(status="ok", session_id=str(s.session_id))
 

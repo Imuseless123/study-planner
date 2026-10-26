@@ -17,6 +17,7 @@ class AssignmentUpdate(BaseModel):
     deadline: datetime | None = None
     required_hours: float | None = Field(None, gt=0, le=100)
     priority: int | None = Field(None, ge=1, le=5)
+    is_completed: bool | None = None
 
 
 class AssignmentResponse(BaseModel):

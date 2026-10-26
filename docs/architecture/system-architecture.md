@@ -86,7 +86,7 @@ Hệ thống được thiết kế theo kiến trúc **Microservices** với 3 t
 | **Backend (Tier 1)** | FastAPI + SQLAlchemy | Async, type-safe, tự động sinh Swagger |
 | **Risk Indicator (Tier 2)** | FastAPI + Pydantic | Nhẹ, dễ viết unit test cho pure functions |
 | **LP Solver (Tier 3)** | PuLP + CBC | Open-source, mạnh mẽ cho MILP |
-| **Database** | PostgreSQL 15 | Hỗ trợ tốt JSONB, UUID, TIMESTAMPTZ |
+| **Database** | PostgreSQL 15 + Alembic | 9 tables, 3 migrations |
 | **Deployment** | Docker Compose | Nhất quán giữa dev và production |
 
 ---

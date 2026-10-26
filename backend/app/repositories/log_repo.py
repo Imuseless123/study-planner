@@ -10,9 +10,9 @@ class LogRepository:
 
     # ====== CREATE ======
 
-    def create_study_session(self, user_id, subject_id, start_time, duration, focus) -> StudySession:
+    def create_study_session(self, user_id, subject_id, start_time, duration, focus, assignment_id=None) -> StudySession:
         s = StudySession(
-            user_id=user_id, subject_id=subject_id,
+            user_id=user_id, subject_id=subject_id, assignment_id=assignment_id,
             start_time=start_time, duration=duration, focus_level=focus,
         )
         self.db.add(s)

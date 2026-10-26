@@ -10,6 +10,7 @@ export interface Assignment {
   priority: number;
   days_until_deadline: number;
   is_overdue: boolean;
+  is_completed: boolean;
 }
 
 export interface AssignmentStats {

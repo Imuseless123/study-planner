@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, time
 from pydantic import BaseModel, EmailStr, Field, ConfigDict
 
 
@@ -26,8 +26,12 @@ class LoginResponse(BaseModel):
 
 class UserMeResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
-
     user_id: str
     username: str
     email: str
     created_at: datetime
+    usual_bedtime: time
+
+
+class UserSettingsUpdate(BaseModel):
+    usual_bedtime: time

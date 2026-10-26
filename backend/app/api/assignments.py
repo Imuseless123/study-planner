@@ -34,6 +34,7 @@ def _to_response(a, subject_name: str) -> AssignmentResponse:
         deadline=a.deadline,
         required_hours=float(a.required_hours),
         priority=a.priority,
+        is_completed=a.is_completed,
         days_until_deadline=days_until,
         is_overdue=is_overdue,
     )
