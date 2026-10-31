@@ -42,6 +42,8 @@ curl -s http://localhost:8000/health | jq
   - [Tầng 1 — Web App](./docs/architecture/tier-1-overview.md)
   - [Tầng 2 — Risk Indicator](./docs/architecture/tier-2-overview.md)
   - [Tầng 3 — LP Solver](./docs/architecture/tier-3-overview.md)
+  - [Luồng dữ liệu End-to-End](./docs/architecture/data-flow.md)
+  - [Đánh giá lịch: lợi ích và hạn chế](./docs/architecture/schedule-benefits-limitations.md)
 
 ### Hướng dẫn
 
@@ -94,6 +96,26 @@ Hệ thống gồm **3 tầng chức năng**, giao tiếp qua RESTful API:
 | **Tầng 1** | Web App — Thu thập dữ liệu, Dashboard | React + FastAPI + PostgreSQL | ✅ |
 | **Tầng 2** | Workload Risk Indicator (rule-based) | FastAPI + Python | ✅ |
 | **Tầng 3** | LP Optimization Engine | FastAPI + PuLP (MILP) | ✅ |
+
+### Đánh giá lịch học do hệ thống tạo
+
+Lịch được tạo bởi Tầng 3 là lịch tối ưu có ràng buộc, không phải lịch chia đều. Chi tiết xem [docs/architecture/schedule-benefits-limitations.md](./docs/architecture/schedule-benefits-limitations.md).
+
+**Lợi ích chính:**
+
+- Cá nhân hóa theo từng bài tập: deadline, số giờ cần học, độ khó môn, độ ưu tiên bài tập.
+- Điều chỉnh theo rủi ro: trần giờ/ngày giảm khi risk score cao.
+- Dùng ràng buộc mềm: luôn trả về lịch kèm cảnh báo thay vì báo vô nghiệm.
+- Mô phỏng lợi nhuận giảm dần của việc học và ưu tiên khung giờ hiệu quả.
+- Có giải thích theo bài tập/ngày, lưu lịch và thu feedback.
+
+**Hạn chế chính:**
+
+- Chưa biết lịch bận thực tế; giả định mỗi ngày có 6 giờ rảnh.
+- Deadline chỉ xét theo ngày, chưa theo giờ.
+- Chưa dùng dữ liệu mood/stress/energy và chưa có vòng phản hồi từ kết quả học thực tế.
+- Khung giờ cố định (sáng/chiều/tối), chưa có giờ bắt đầu chính xác, nghỉ ngơi hay export calendar.
+- Một số tham số mô hình còn mang tính heuristic, chưa được hiệu chỉnh bằng dữ liệu người dùng.
 
 ---
 
