@@ -1,0 +1,102 @@
+{
+  "n_scenarios": 300,
+  "methods": {
+    "greedy": {
+      "feasibility_rate_pct": 70.0,
+      "avg_shortfall_h": 7.8845,
+      "avg_overload_h": 5.0361,
+      "avg_objective": 23.9477,
+      "avg_objective_fair": -633.865,
+      "avg_runtime_s": 0.0
+    },
+    "lp": {
+      "feasibility_rate_pct": 100.0,
+      "avg_shortfall_h": 10.5794,
+      "avg_overload_h": 0.0,
+      "avg_objective": -163.456,
+      "avg_objective_fair": -163.4563,
+      "avg_runtime_s": 5.1708
+    }
+  },
+  "by_type": {
+    "Light": {
+      "greedy": {
+        "n": 90,
+        "feasibility_rate_pct": 100.0,
+        "avg_shortfall_h": 0.0,
+        "avg_overload_h": 2.2212,
+        "avg_objective_fair": -216.8755,
+        "avg_runtime_s": 0.0
+      },
+      "lp": {
+        "n": 90,
+        "feasibility_rate_pct": 100.0,
+        "avg_shortfall_h": 0.0,
+        "avg_overload_h": 0.0,
+        "avg_objective_fair": 16.7647,
+        "avg_runtime_s": 3.0637
+      }
+    },
+    "Normal": {
+      "greedy": {
+        "n": 120,
+        "feasibility_rate_pct": 100.0,
+        "avg_shortfall_h": 0.0568,
+        "avg_overload_h": 4.7322,
+        "avg_objective_fair": -448.3774,
+        "avg_runtime_s": 0.0
+      },
+      "lp": {
+        "n": 120,
+        "feasibility_rate_pct": 100.0,
+        "avg_shortfall_h": 0.5996,
+        "avg_overload_h": 0.0,
+        "avg_objective_fair": 41.5168,
+        "avg_runtime_s": 7.2901
+      }
+    },
+    "Heavy": {
+      "greedy": {
+        "n": 60,
+        "feasibility_rate_pct": 0.0,
+        "avg_shortfall_h": 18.3733,
+        "avg_overload_h": 7.6855,
+        "avg_objective_fair": -1087.3397,
+        "avg_runtime_s": 0.0
+      },
+      "lp": {
+        "n": 60,
+        "feasibility_rate_pct": 100.0,
+        "avg_shortfall_h": 26.0613,
+        "avg_overload_h": 0.0,
+        "avg_objective_fair": -449.4737,
+        "avg_runtime_s": 5.3077
+      }
+    },
+    "Extreme": {
+      "greedy": {
+        "n": 30,
+        "feasibility_rate_pct": 0.0,
+        "avg_shortfall_h": 41.8717,
+        "avg_overload_h": 9.398,
+        "avg_objective_fair": -1719.8345,
+        "avg_runtime_s": 0.0001
+      },
+      "lp": {
+        "n": 30,
+        "feasibility_rate_pct": 100.0,
+        "avg_shortfall_h": 51.273,
+        "avg_overload_h": 0.0,
+        "avg_objective_fair": -951.9768,
+        "avg_runtime_s": 2.7413
+      }
+    }
+  },
+  "paired_ttest_pvalues": {
+    "shortfall": 3.870843779195087e-26,
+    "overload": 5.338203487346909e-76,
+    "objective_value": 3.1036767671688164e-20,
+    "objective_fair": 6.273320767259778e-86,
+    "runtime_s": 1.7419912748151225e-18
+  }
+}

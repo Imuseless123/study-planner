@@ -1,0 +1,361 @@
+{
+  "communities": {
+    "0": [
+      "ref_ant_design_icons",
+      "ref_react",
+      "ref_react_router_dom",
+      "src_api_auth",
+      "src_api_auth_authapi",
+      "src_api_auth_authresponse",
+      "src_api_auth_consentresponse",
+      "src_api_auth_loginpayload",
+      "src_api_auth_registerpayload",
+      "src_api_auth_userme",
+      "src_app",
+      "src_app_app",
+      "src_components_mobilebottomnav",
+      "src_components_mobilebottomnav_items",
+      "src_components_mobilebottomnav_mobilebottomnav",
+      "src_components_protectedroute",
+      "src_components_protectedroute_protectedroute",
+      "src_components_protectedroute_protectedrouteprops",
+      "src_components_quickactionfab",
+      "src_components_quickactionfab_props",
+      "src_components_quickactionfab_quickactionfab",
+      "src_hooks_useismobile",
+      "src_hooks_useismobile_useismobile",
+      "src_index",
+      "src_layouts_applayout",
+      "src_layouts_applayout_applayout",
+      "src_layouts_applayout_menu_items",
+      "src_layouts_authlayout",
+      "src_layouts_authlayout_authlayout",
+      "src_main",
+      "src_pages_assignmentspage_assignmentspage",
+      "src_pages_consentpage",
+      "src_pages_consentpage_consentpage",
+      "src_pages_loginpage",
+      "src_pages_loginpage_loginform",
+      "src_pages_loginpage_loginpage",
+      "src_pages_registerpage",
+      "src_pages_registerpage_registerform",
+      "src_pages_registerpage_registerpage",
+      "src_pages_schedulepage_schedulepage",
+      "src_pages_settingspage_settingspage",
+      "src_pages_subjectspage_subjectspage",
+      "src_store_authstore",
+      "src_store_authstore_authstate",
+      "src_store_authstore_useauthstore"
+    ],
+    "1": [
+      "src_api_assignments",
+      "src_api_assignments_assignment",
+      "src_api_assignments_assignmentcreatepayload",
+      "src_api_assignments_assignmentsapi",
+      "src_api_assignments_assignmentstats",
+      "src_api_assignments_assignmentupdatepayload",
+      "src_api_client",
+      "src_api_client_api",
+      "src_api_feedback",
+      "src_api_feedback_feedback",
+      "src_api_feedback_feedbackapi",
+      "src_api_feedback_feedbackcreate",
+      "src_api_schedule",
+      "src_api_schedule_dayexplanation",
+      "src_api_schedule_scheduleapi",
+      "src_api_schedule_scheduleentry",
+      "src_api_schedule_scheduleresponse",
+      "src_api_schedule_subjectexplanation",
+      "src_api_schedule_warning",
+      "src_api_subjects",
+      "src_api_subjects_subject",
+      "src_api_subjects_subjectcreatepayload",
+      "src_api_subjects_subjectsapi",
+      "src_api_subjects_subjectupdatepayload",
+      "src_components_quickcreatebuttons",
+      "src_components_quickcreatebuttons_common_subjects",
+      "src_components_quickcreatebuttons_props",
+      "src_components_quickstudybar",
+      "src_components_quickstudybar_durations",
+      "src_components_quickstudybar_props",
+      "src_pages_assignmentspage",
+      "src_pages_assignmentspage_formvalues",
+      "src_pages_schedulepage",
+      "src_pages_schedulepage_slot_bg",
+      "src_pages_schedulepage_slot_labels",
+      "src_pages_subjectspage",
+      "src_pages_subjectspage_common_subjects",
+      "src_pages_subjectspage_formvalues"
+    ],
+    "2": [
+      "package",
+      "package_dependencies",
+      "package_dependencies_ant_design_icons",
+      "package_dependencies_antd",
+      "package_dependencies_axios",
+      "package_dependencies_dayjs",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_router_dom",
+      "package_dependencies_recharts",
+      "package_dependencies_zustand",
+      "package_devdependencies",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_preview",
+      "package_type",
+      "package_version",
+      "ref_axios",
+      "ref_react_dom",
+      "ref_recharts",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_typescript",
+      "ref_vite",
+      "ref_vitejs_plugin_react",
+      "ref_zustand",
+      "vite_config"
+    ],
+    "3": [
+      "ref_antd",
+      "src_api_dashboard",
+      "src_api_dashboard_dashboardapi",
+      "src_api_dashboard_dashboardsummary",
+      "src_api_dashboard_upcomingassignment",
+      "src_components_deadlinetimeline",
+      "src_components_deadlinetimeline_deadlinetimeline",
+      "src_components_deadlinetimeline_props",
+      "src_components_quickcreatebuttons_quickcreatebuttons",
+      "src_components_quickmoodbar_quickmoodbar",
+      "src_components_quicksleepwidget_quicksleepwidget",
+      "src_components_quickstudybar_quickstudybar",
+      "src_components_riskscorewidget_riskscorewidget",
+      "src_components_sleepqualitycard",
+      "src_components_sleepqualitycard_props",
+      "src_components_sleepqualitycard_sleepqualitycard",
+      "src_components_statisticscards",
+      "src_components_statisticscards_calculatestreak",
+      "src_components_statisticscards_props",
+      "src_components_statisticscards_statisticscards",
+      "src_components_weeklystudychart",
+      "src_components_weeklystudychart_props",
+      "src_components_weeklystudychart_weeklystudychart",
+      "src_components_workloadheatmap",
+      "src_components_workloadheatmap_getcolorforhours",
+      "src_components_workloadheatmap_gettextcolorforhours",
+      "src_components_workloadheatmap_props",
+      "src_components_workloadheatmap_workloadheatmap",
+      "src_pages_dashboardpage",
+      "src_pages_dashboardpage_dashboardpage"
+    ],
+    "4": [
+      "ref_dayjs",
+      "src_api_client_geterrormessage",
+      "src_api_logs",
+      "src_api_logs_logsapi",
+      "src_api_logs_moodlogitem",
+      "src_api_logs_moodlogpayload",
+      "src_api_logs_sleeplogitem",
+      "src_api_logs_sleeplogpayload",
+      "src_api_logs_studylogitem",
+      "src_api_logs_studylogpayload",
+      "src_components_moodlogform",
+      "src_components_moodlogform_moodlogform",
+      "src_components_moodlogform_props",
+      "src_components_quickmoodbar",
+      "src_components_quickmoodbar_energy_levels",
+      "src_components_quickmoodbar_props",
+      "src_components_quickmoodbar_stress_levels",
+      "src_components_quicksleepwidget",
+      "src_components_quicksleepwidget_props",
+      "src_components_quicksleepwidget_quality_levels",
+      "src_components_sleeplogform",
+      "src_components_sleeplogform_props",
+      "src_components_sleeplogform_sleeplogform",
+      "src_components_studylogform",
+      "src_components_studylogform_props",
+      "src_components_studylogform_studylogform",
+      "src_pages_loggingpage",
+      "src_pages_loggingpage_loggingpage"
+    ],
+    "5": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowimportingtsextensions",
+      "tsconfig_compileroptions_baseurl",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_compileroptions_nounusedlocals",
+      "tsconfig_compileroptions_nounusedparameters",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_compileroptions_usedefineforclassfields",
+      "tsconfig_include"
+    ],
+    "6": [
+      "src_api_consent",
+      "src_api_consent_consentapi",
+      "src_api_consent_consentinfo",
+      "src_api_userdata",
+      "src_api_userdata_dataexport",
+      "src_api_userdata_deleteaccountpayload",
+      "src_api_userdata_userdataapi",
+      "src_pages_settingspage"
+    ],
+    "7": [
+      "src_api_risk",
+      "src_api_risk_riskapi",
+      "src_api_risk_riskcomponents",
+      "src_api_risk_riskscore",
+      "src_api_risk_riskweights",
+      "src_components_riskscorewidget",
+      "src_components_riskscorewidget_level_config"
+    ],
+    "8": [
+      "src_vite_env_d",
+      "src_vite_env_d_importmeta",
+      "src_vite_env_d_importmetaenv"
+    ]
+  },
+  "cohesion": {
+    "0": 0.11212121212121212,
+    "1": 0.10241820768136557,
+    "2": 0.07142857142857142,
+    "3": 0.15862068965517243,
+    "4": 0.15608465608465608,
+    "5": 0.1,
+    "6": 0.39285714285714285,
+    "7": 0.38095238095238093,
+    "8": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "src_api_client_geterrormessage",
+      "label": "getErrorMessage()",
+      "degree": 36
+    },
+    {
+      "id": "ref_antd",
+      "label": "antd",
+      "degree": 29
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 25
+    },
+    {
+      "id": "ref_ant_design_icons",
+      "label": "@ant-design/icons",
+      "degree": 22
+    },
+    {
+      "id": "ref_dayjs",
+      "label": "dayjs",
+      "degree": 18
+    },
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "ref_react_router_dom",
+      "label": "react-router-dom",
+      "degree": 16
+    },
+    {
+      "id": "src_store_authstore_useauthstore",
+      "label": "useAuthStore",
+      "degree": 16
+    },
+    {
+      "id": "src_pages_dashboardpage_dashboardpage",
+      "label": "DashboardPage()",
+      "degree": 15
+    },
+    {
+      "id": "src_app_app",
+      "label": "App()",
+      "degree": 14
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Props",
+      "target": "Subject",
+      "source_files": [
+        "src/components/StudyLogForm.tsx",
+        "src/api/subjects.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities; peripheral node `Props` unexpectedly reaches hub `Subject`"
+    },
+    {
+      "source": "App()",
+      "target": "DashboardPage()",
+      "source_files": [
+        "src/App.tsx",
+        "src/pages/DashboardPage.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "App()",
+      "target": "LoggingPage()",
+      "source_files": [
+        "src/App.tsx",
+        "src/pages/LoggingPage.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "DeadlineTimeline()",
+      "target": "getErrorMessage()",
+      "source_files": [
+        "src/components/DeadlineTimeline.tsx",
+        "src/api/client.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "QuickCreateButtons()",
+      "target": "getErrorMessage()",
+      "source_files": [
+        "src/components/QuickCreateButtons.tsx",
+        "src/api/client.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

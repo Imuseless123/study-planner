@@ -151,8 +151,12 @@ def solve_schedule(input_data: dict) -> dict:
         ),
     )
 
-    # Solve — CBC solver, quiet mode
-    prob.solve(pulp.PULP_CBC_CMD(msg=False))
+    # Solve — CBC solver, quiet mode. timeLimit=30 khớp replica evaluate/lp_solver.py;
+    # nếu không, một số scenario (vd SC_010) chạy tới 449s vì CBC không có trần.
+    # Có thể override qua env CBC_TIME_LIMIT (giây), mặc định 30.
+    import os
+    _tl = float(os.environ.get("CBC_TIME_LIMIT", "30"))
+    prob.solve(pulp.PULP_CBC_CMD(msg=False, timeLimit=_tl))
 
     if prob.status == pulp.LpStatusOptimal:
         obj_val = pulp.value(prob.objective) or 0.0

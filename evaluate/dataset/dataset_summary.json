@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-11-06T09:50:58.982622+00:00",
+  "total_scenarios": 300,
+  "by_type": {
+    "Light": {
+      "count": 90,
+      "avg_load_ratio": 0.195,
+      "avg_assignments": 2.04
+    },
+    "Normal": {
+      "count": 120,
+      "avg_load_ratio": 0.698,
+      "avg_assignments": 6.07
+    },
+    "Heavy": {
+      "count": 60,
+      "avg_load_ratio": 0.999,
+      "avg_assignments": 10.03
+    },
+    "Extreme": {
+      "count": 30,
+      "avg_load_ratio": 1.428,
+      "avg_assignments": 15.0
+    }
+  },
+  "params": {
+    "seed": 42,
+    "tod_factors": [
+      1.2,
+      1.0,
+      0.8
+    ],
+    "min_session_hours": 0.5,
+    "buffer_ratio": 0.25,
+    "big_m": 8.0,
+    "horizon_rule": "min(max(7, max_deadline_day+1), 30)"
+  }
+}

@@ -1,0 +1,6002 @@
+[
+  {
+    "scenario_id": "SC_001",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 7.82,
+      "objective_fair": -126.0314,
+      "shortfall": 0.0,
+      "overload": 1.3,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 10.7372,
+      "objective_fair": 10.7372,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0269
+    }
+  },
+  {
+    "scenario_id": "SC_002",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 20.31,
+      "objective_fair": -243.3688,
+      "shortfall": 0.0,
+      "overload": 2.48,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 18.042,
+      "objective_fair": 18.0418,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1227
+    }
+  },
+  {
+    "scenario_id": "SC_003",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 20.0,
+      "objective_fair": -199.1919,
+      "shortfall": 0.0,
+      "overload": 2.1,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 31.5928,
+      "objective_fair": 31.5929,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1879
+    }
+  },
+  {
+    "scenario_id": "SC_004",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 16.3,
+      "objective_fair": -237.006,
+      "shortfall": 0.0,
+      "overload": 2.39,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 8.3575,
+      "objective_fair": 8.3574,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.3501
+    }
+  },
+  {
+    "scenario_id": "SC_005",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 14.72,
+      "objective_fair": -144.3624,
+      "shortfall": 0.0,
+      "overload": 1.61,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 45.3991,
+      "objective_fair": 45.399,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.038
+    }
+  },
+  {
+    "scenario_id": "SC_006",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -7.6667,
+      "shortfall": 0.0,
+      "overload": 0.08,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 1.1035,
+      "objective_fair": 1.1035,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0261
+    }
+  },
+  {
+    "scenario_id": "SC_007",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -127.1538,
+      "shortfall": 0.0,
+      "overload": 1.29,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 6.3822,
+      "objective_fair": 6.382,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0274
+    }
+  },
+  {
+    "scenario_id": "SC_008",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 17.55,
+      "objective_fair": -133.6482,
+      "shortfall": 0.0,
+      "overload": 1.39,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 16.3672,
+      "objective_fair": 16.3671,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0542
+    }
+  },
+  {
+    "scenario_id": "SC_009",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 20.82,
+      "objective_fair": -372.2841,
+      "shortfall": 0.0,
+      "overload": 3.8,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 26.0214,
+      "objective_fair": 26.0212,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.657
+    }
+  },
+  {
+    "scenario_id": "SC_010",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 18.5,
+      "objective_fair": -560.4152,
+      "shortfall": 0.0,
+      "overload": 5.71,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 34.4753,
+      "objective_fair": 34.4749,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0418
+    }
+  },
+  {
+    "scenario_id": "SC_011",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -147.6667,
+      "shortfall": 0.0,
+      "overload": 1.49,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 5.0,
+      "objective_fair": 4.9999,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0332
+    }
+  },
+  {
+    "scenario_id": "SC_012",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 16.13,
+      "objective_fair": -153.9625,
+      "shortfall": 0.0,
+      "overload": 1.6,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 19.3915,
+      "objective_fair": 19.3913,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0939
+    }
+  },
+  {
+    "scenario_id": "SC_013",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 14.95,
+      "objective_fair": -154.8794,
+      "shortfall": 0.0,
+      "overload": 1.56,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 4.2097,
+      "objective_fair": 4.2097,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.4567
+    }
+  },
+  {
+    "scenario_id": "SC_014",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 18.94,
+      "objective_fair": -207.1998,
+      "shortfall": 0.0,
+      "overload": 2.16,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 28.2154,
+      "objective_fair": 28.2149,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0588
+    }
+  },
+  {
+    "scenario_id": "SC_015",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 20.0,
+      "objective_fair": -161.662,
+      "shortfall": 0.0,
+      "overload": 1.69,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 24.4856,
+      "objective_fair": 24.4855,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0592
+    }
+  },
+  {
+    "scenario_id": "SC_016",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -36.4667,
+      "shortfall": 0.0,
+      "overload": 0.37,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 2.0,
+      "objective_fair": 2.0,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0289
+    }
+  },
+  {
+    "scenario_id": "SC_017",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 17.05,
+      "objective_fair": -6.353,
+      "shortfall": 0.0,
+      "overload": 0.15,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 28.1526,
+      "objective_fair": 28.1524,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0674
+    }
+  },
+  {
+    "scenario_id": "SC_018",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 19.36,
+      "objective_fair": -85.3854,
+      "shortfall": 0.0,
+      "overload": 0.88,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 7.8309,
+      "objective_fair": 7.8309,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.2001
+    }
+  },
+  {
+    "scenario_id": "SC_019",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 17.95,
+      "objective_fair": -335.3403,
+      "shortfall": 0.0,
+      "overload": 3.43,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 21.3565,
+      "objective_fair": 21.3562,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 2.5888
+    }
+  },
+  {
+    "scenario_id": "SC_020",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 12.43,
+      "objective_fair": -188.1055,
+      "shortfall": 0.0,
+      "overload": 1.96,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 25.1882,
+      "objective_fair": 25.1881,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 15.234
+    }
+  },
+  {
+    "scenario_id": "SC_021",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 15.69,
+      "objective_fair": -268.2916,
+      "shortfall": 0.0,
+      "overload": 2.77,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 30.3381,
+      "objective_fair": 30.3379,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0446
+    }
+  },
+  {
+    "scenario_id": "SC_022",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 13.27,
+      "objective_fair": -346.7529,
+      "shortfall": 0.0,
+      "overload": 3.5,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 9.1239,
+      "objective_fair": 9.1238,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0367
+    }
+  },
+  {
+    "scenario_id": "SC_023",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 18.69,
+      "objective_fair": -203.283,
+      "shortfall": 0.0,
+      "overload": 2.12,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 29.2379,
+      "objective_fair": 29.2375,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0721
+    }
+  },
+  {
+    "scenario_id": "SC_024",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 17.87,
+      "objective_fair": -498.8887,
+      "shortfall": 0.0,
+      "overload": 5.03,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 13.7416,
+      "objective_fair": 13.7414,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0583
+    }
+  },
+  {
+    "scenario_id": "SC_025",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 15.86,
+      "objective_fair": -48.6202,
+      "shortfall": 0.0,
+      "overload": 0.56,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 21.7443,
+      "objective_fair": 21.7439,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0355
+    }
+  },
+  {
+    "scenario_id": "SC_026",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 13.57,
+      "objective_fair": -285.3397,
+      "shortfall": 0.0,
+      "overload": 2.91,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 15.1641,
+      "objective_fair": 15.164,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0553
+    }
+  },
+  {
+    "scenario_id": "SC_027",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -152.8571,
+      "shortfall": 0.0,
+      "overload": 1.54,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 4.1183,
+      "objective_fair": 4.1182,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0276
+    }
+  },
+  {
+    "scenario_id": "SC_028",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -191.6981,
+      "shortfall": 0.0,
+      "overload": 1.92,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 1.0637,
+      "objective_fair": 1.0637,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0271
+    }
+  },
+  {
+    "scenario_id": "SC_029",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 11.22,
+      "objective_fair": -112.7593,
+      "shortfall": 0.0,
+      "overload": 1.17,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 13.078,
+      "objective_fair": 13.078,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 2.5596
+    }
+  },
+  {
+    "scenario_id": "SC_030",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 22.75,
+      "objective_fair": -537.3244,
+      "shortfall": 0.0,
+      "overload": 5.52,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 47.9257,
+      "objective_fair": 47.9255,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.4668
+    }
+  },
+  {
+    "scenario_id": "SC_031",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": 3.8462,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 9.656,
+      "objective_fair": 9.656,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0297
+    }
+  },
+  {
+    "scenario_id": "SC_032",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 15.03,
+      "objective_fair": -307.4454,
+      "shortfall": 0.0,
+      "overload": 3.12,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 18.2298,
+      "objective_fair": 18.2296,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.082
+    }
+  },
+  {
+    "scenario_id": "SC_033",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -136.8,
+      "shortfall": 0.0,
+      "overload": 1.4,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 9.656,
+      "objective_fair": 9.6559,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0254
+    }
+  },
+  {
+    "scenario_id": "SC_034",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -116.5,
+      "shortfall": 0.0,
+      "overload": 1.24,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 20.4183,
+      "objective_fair": 20.4184,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0323
+    }
+  },
+  {
+    "scenario_id": "SC_035",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 12.12,
+      "objective_fair": -138.751,
+      "shortfall": 0.0,
+      "overload": 1.42,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 11.2008,
+      "objective_fair": 11.2006,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0466
+    }
+  },
+  {
+    "scenario_id": "SC_036",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 18.71,
+      "objective_fair": -158.2714,
+      "shortfall": 0.0,
+      "overload": 1.69,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 32.3866,
+      "objective_fair": 32.3863,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.2407
+    }
+  },
+  {
+    "scenario_id": "SC_037",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -68.6667,
+      "shortfall": 0.0,
+      "overload": 0.74,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 20.0,
+      "objective_fair": 19.9995,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.031
+    }
+  },
+  {
+    "scenario_id": "SC_038",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 22.3,
+      "objective_fair": -59.7109,
+      "shortfall": 0.0,
+      "overload": 0.65,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 18.1384,
+      "objective_fair": 18.1383,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.5709
+    }
+  },
+  {
+    "scenario_id": "SC_039",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 13.43,
+      "objective_fair": -33.2698,
+      "shortfall": 0.0,
+      "overload": 0.41,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 24.2373,
+      "objective_fair": 24.2371,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1104
+    }
+  },
+  {
+    "scenario_id": "SC_040",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 16.61,
+      "objective_fair": -337.5711,
+      "shortfall": 0.0,
+      "overload": 3.44,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 21.1603,
+      "objective_fair": 21.1603,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.3785
+    }
+  },
+  {
+    "scenario_id": "SC_041",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 16.12,
+      "objective_fair": -200.7838,
+      "shortfall": 0.0,
+      "overload": 2.07,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 24.0791,
+      "objective_fair": 24.079,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0516
+    }
+  },
+  {
+    "scenario_id": "SC_042",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -91.9231,
+      "shortfall": 0.0,
+      "overload": 0.95,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 10.6369,
+      "objective_fair": 10.6367,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0275
+    }
+  },
+  {
+    "scenario_id": "SC_043",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 13.5,
+      "objective_fair": -108.9846,
+      "shortfall": 0.0,
+      "overload": 1.13,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 12.9557,
+      "objective_fair": 12.9556,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.043
+    }
+  },
+  {
+    "scenario_id": "SC_044",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 24.7,
+      "objective_fair": -353.7046,
+      "shortfall": 0.0,
+      "overload": 3.62,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 25.0656,
+      "objective_fair": 25.0656,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.2602
+    }
+  },
+  {
+    "scenario_id": "SC_045",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 13.66,
+      "objective_fair": -170.876,
+      "shortfall": 0.0,
+      "overload": 1.76,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 14.8305,
+      "objective_fair": 14.8305,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.582
+    }
+  },
+  {
+    "scenario_id": "SC_046",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 23.99,
+      "objective_fair": -509.2458,
+      "shortfall": 0.0,
+      "overload": 5.12,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 10.3,
+      "objective_fair": 10.2999,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1097
+    }
+  },
+  {
+    "scenario_id": "SC_047",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 22.98,
+      "objective_fair": -524.714,
+      "shortfall": 0.0,
+      "overload": 5.3,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 17.0477,
+      "objective_fair": 17.0475,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 9.1697
+    }
+  },
+  {
+    "scenario_id": "SC_048",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 21.71,
+      "objective_fair": -215.9072,
+      "shortfall": 0.0,
+      "overload": 2.23,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 18.5345,
+      "objective_fair": 18.5346,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.1271
+    }
+  },
+  {
+    "scenario_id": "SC_049",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 16.36,
+      "objective_fair": -169.4599,
+      "shortfall": 0.0,
+      "overload": 1.72,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 8.8922,
+      "objective_fair": 8.892,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1061
+    }
+  },
+  {
+    "scenario_id": "SC_050",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -40.0053,
+      "shortfall": 0.0,
+      "overload": 0.42,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 6.035,
+      "objective_fair": 6.035,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.026
+    }
+  },
+  {
+    "scenario_id": "SC_051",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -128.4286,
+      "shortfall": 0.0,
+      "overload": 1.29,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 2.0591,
+      "objective_fair": 2.0591,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0276
+    }
+  },
+  {
+    "scenario_id": "SC_052",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 15.36,
+      "objective_fair": -291.6468,
+      "shortfall": 0.0,
+      "overload": 2.95,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 13.5327,
+      "objective_fair": 13.5326,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.0045
+    }
+  },
+  {
+    "scenario_id": "SC_053",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 17.09,
+      "objective_fair": -423.8971,
+      "shortfall": 0.0,
+      "overload": 4.32,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 25.0186,
+      "objective_fair": 25.0183,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0411
+    }
+  },
+  {
+    "scenario_id": "SC_054",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -244.1319,
+      "shortfall": 0.0,
+      "overload": 2.45,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 2.552,
+      "objective_fair": 2.552,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0242
+    }
+  },
+  {
+    "scenario_id": "SC_055",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -236.1125,
+      "shortfall": 0.0,
+      "overload": 2.4,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 10.898,
+      "objective_fair": 10.8981,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0236
+    }
+  },
+  {
+    "scenario_id": "SC_056",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 20.0,
+      "objective_fair": -7.1549,
+      "shortfall": 0.0,
+      "overload": 0.17,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 31.3847,
+      "objective_fair": 31.3843,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.2049
+    }
+  },
+  {
+    "scenario_id": "SC_057",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -1.6364,
+      "shortfall": 0.0,
+      "overload": 0.06,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 13.8065,
+      "objective_fair": 13.8064,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0261
+    }
+  },
+  {
+    "scenario_id": "SC_058",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 16.21,
+      "objective_fair": -39.2833,
+      "shortfall": 0.0,
+      "overload": 0.42,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 9.1732,
+      "objective_fair": 9.1731,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1104
+    }
+  },
+  {
+    "scenario_id": "SC_059",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 17.5,
+      "objective_fair": -387.1975,
+      "shortfall": 0.0,
+      "overload": 3.91,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 11.8974,
+      "objective_fair": 11.8973,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0357
+    }
+  },
+  {
+    "scenario_id": "SC_060",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 18.43,
+      "objective_fair": -189.5305,
+      "shortfall": 0.0,
+      "overload": 1.96,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 20.3987,
+      "objective_fair": 20.3985,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.3193
+    }
+  },
+  {
+    "scenario_id": "SC_061",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 17.24,
+      "objective_fair": -106.8816,
+      "shortfall": 0.0,
+      "overload": 1.13,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 19.3312,
+      "objective_fair": 19.331,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.3134
+    }
+  },
+  {
+    "scenario_id": "SC_062",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 15.62,
+      "objective_fair": -141.8502,
+      "shortfall": 0.0,
+      "overload": 1.47,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 18.7127,
+      "objective_fair": 18.7126,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 9.0622
+    }
+  },
+  {
+    "scenario_id": "SC_063",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 21.03,
+      "objective_fair": -521.693,
+      "shortfall": 0.0,
+      "overload": 5.3,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 27.8169,
+      "objective_fair": 27.8166,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1158
+    }
+  },
+  {
+    "scenario_id": "SC_064",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 21.23,
+      "objective_fair": -69.001,
+      "shortfall": 0.0,
+      "overload": 0.76,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 22.1416,
+      "objective_fair": 22.1416,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1385
+    }
+  },
+  {
+    "scenario_id": "SC_065",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 9.4,
+      "objective_fair": -180.0088,
+      "shortfall": 0.0,
+      "overload": 1.82,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 5.2627,
+      "objective_fair": 5.2627,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0263
+    }
+  },
+  {
+    "scenario_id": "SC_066",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 9.4,
+      "objective_fair": -28.6667,
+      "shortfall": 0.0,
+      "overload": 0.3,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 3.7038,
+      "objective_fair": 3.7038,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0269
+    }
+  },
+  {
+    "scenario_id": "SC_067",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -105.5455,
+      "shortfall": 0.0,
+      "overload": 1.07,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 4.6022,
+      "objective_fair": 4.6021,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0279
+    }
+  },
+  {
+    "scenario_id": "SC_068",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 23.66,
+      "objective_fair": -751.0706,
+      "shortfall": 0.0,
+      "overload": 7.58,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 24.6546,
+      "objective_fair": 24.6543,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.2541
+    }
+  },
+  {
+    "scenario_id": "SC_069",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 23.4,
+      "objective_fair": -458.7606,
+      "shortfall": 0.0,
+      "overload": 4.65,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 21.5986,
+      "objective_fair": 21.5984,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.789
+    }
+  },
+  {
+    "scenario_id": "SC_070",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 15.08,
+      "objective_fair": -231.0192,
+      "shortfall": 0.0,
+      "overload": 2.38,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 29.4259,
+      "objective_fair": 29.4253,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 3.9925
+    }
+  },
+  {
+    "scenario_id": "SC_071",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 18.87,
+      "objective_fair": -570.5823,
+      "shortfall": 0.0,
+      "overload": 5.76,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 16.561,
+      "objective_fair": 16.561,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1858
+    }
+  },
+  {
+    "scenario_id": "SC_072",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 23.48,
+      "objective_fair": -706.5557,
+      "shortfall": 0.0,
+      "overload": 7.12,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 18.4719,
+      "objective_fair": 18.4719,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.6062
+    }
+  },
+  {
+    "scenario_id": "SC_073",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -157.0769,
+      "shortfall": 0.0,
+      "overload": 1.58,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 3.1911,
+      "objective_fair": 3.191,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0272
+    }
+  },
+  {
+    "scenario_id": "SC_074",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 12.09,
+      "objective_fair": -288.4091,
+      "shortfall": 0.0,
+      "overload": 2.96,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 24.11,
+      "objective_fair": 24.1095,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.039
+    }
+  },
+  {
+    "scenario_id": "SC_075",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -130.6667,
+      "shortfall": 0.0,
+      "overload": 1.36,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 20.0,
+      "objective_fair": 19.9995,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0272
+    }
+  },
+  {
+    "scenario_id": "SC_076",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 17.0,
+      "objective_fair": -187.4279,
+      "shortfall": 0.0,
+      "overload": 1.95,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 24.0828,
+      "objective_fair": 24.0827,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0413
+    }
+  },
+  {
+    "scenario_id": "SC_077",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -70.808,
+      "shortfall": 0.0,
+      "overload": 0.74,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 9.656,
+      "objective_fair": 9.656,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0295
+    }
+  },
+  {
+    "scenario_id": "SC_078",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -5.8,
+      "shortfall": 0.0,
+      "overload": 0.09,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 9.656,
+      "objective_fair": 9.656,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0253
+    }
+  },
+  {
+    "scenario_id": "SC_079",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 14.88,
+      "objective_fair": -257.6796,
+      "shortfall": 0.0,
+      "overload": 2.67,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 29.95,
+      "objective_fair": 29.9497,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0394
+    }
+  },
+  {
+    "scenario_id": "SC_080",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 15.02,
+      "objective_fair": -211.2482,
+      "shortfall": 0.0,
+      "overload": 2.15,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 11.0062,
+      "objective_fair": 11.0062,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.0006
+    }
+  },
+  {
+    "scenario_id": "SC_081",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 14.4,
+      "objective_fair": -210.3572,
+      "shortfall": 0.0,
+      "overload": 2.13,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 7.9373,
+      "objective_fair": 7.9373,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0376
+    }
+  },
+  {
+    "scenario_id": "SC_082",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -190.6667,
+      "shortfall": 0.0,
+      "overload": 1.96,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 15.312,
+      "objective_fair": 15.312,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0245
+    }
+  },
+  {
+    "scenario_id": "SC_083",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 14.56,
+      "objective_fair": -473.9772,
+      "shortfall": 0.0,
+      "overload": 4.8,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 17.4117,
+      "objective_fair": 17.4117,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.6892
+    }
+  },
+  {
+    "scenario_id": "SC_084",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 11.09,
+      "objective_fair": -280.8946,
+      "shortfall": 0.0,
+      "overload": 2.83,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 8.9934,
+      "objective_fair": 8.9932,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0427
+    }
+  },
+  {
+    "scenario_id": "SC_085",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 16.02,
+      "objective_fair": -379.287,
+      "shortfall": 0.0,
+      "overload": 3.87,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 25.2323,
+      "objective_fair": 25.2322,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0575
+    }
+  },
+  {
+    "scenario_id": "SC_086",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 14.62,
+      "objective_fair": -179.059,
+      "shortfall": 0.0,
+      "overload": 1.83,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 12.2811,
+      "objective_fair": 12.2811,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 6.9669
+    }
+  },
+  {
+    "scenario_id": "SC_087",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -174.5455,
+      "shortfall": 0.0,
+      "overload": 1.76,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 4.6022,
+      "objective_fair": 4.6021,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0298
+    }
+  },
+  {
+    "scenario_id": "SC_088",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 12.55,
+      "objective_fair": 5.0738,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 13.4047,
+      "objective_fair": 13.4047,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.3456
+    }
+  },
+  {
+    "scenario_id": "SC_089",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 20.0,
+      "objective_fair": -380.8755,
+      "shortfall": 0.0,
+      "overload": 3.9,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 25.3412,
+      "objective_fair": 25.3412,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1432
+    }
+  },
+  {
+    "scenario_id": "SC_090",
+    "scenario_type": "Light",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 10.0,
+      "objective_fair": -111.7273,
+      "shortfall": 0.0,
+      "overload": 1.15,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 10.3549,
+      "objective_fair": 10.3548,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0257
+    }
+  },
+  {
+    "scenario_id": "SC_091",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.59,
+      "objective_fair": -501.8852,
+      "shortfall": 0.0,
+      "overload": 5.24,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -13.0762,
+      "objective_fair": -13.0762,
+      "shortfall": 2.198,
+      "overload": 0.0,
+      "runtime_s": 0.5725
+    }
+  },
+  {
+    "scenario_id": "SC_092",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 31.09,
+      "objective_fair": -563.9164,
+      "shortfall": 0.0,
+      "overload": 5.83,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 41.3762,
+      "objective_fair": 41.3663,
+      "shortfall": 0.0,
+      "overload": 0.0001,
+      "runtime_s": 0.7858
+    }
+  },
+  {
+    "scenario_id": "SC_093",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 39.06,
+      "objective_fair": -1225.3148,
+      "shortfall": 0.0,
+      "overload": 12.59,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -68.4074,
+      "objective_fair": -68.4074,
+      "shortfall": 6.42,
+      "overload": 0.0,
+      "runtime_s": 4.0432
+    }
+  },
+  {
+    "scenario_id": "SC_094",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.99,
+      "objective_fair": -510.7123,
+      "shortfall": 0.0,
+      "overload": 5.44,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 63.9045,
+      "objective_fair": 63.9045,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0412
+    }
+  },
+  {
+    "scenario_id": "SC_095",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 28.99,
+      "objective_fair": -206.6346,
+      "shortfall": 0.0,
+      "overload": 2.25,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 36.9062,
+      "objective_fair": 36.9063,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.6202
+    }
+  },
+  {
+    "scenario_id": "SC_096",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.73,
+      "objective_fair": -569.845,
+      "shortfall": 0.0,
+      "overload": 5.99,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 51.3501,
+      "objective_fair": 51.3501,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 13.8316
+    }
+  },
+  {
+    "scenario_id": "SC_097",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 31.58,
+      "objective_fair": -547.5424,
+      "shortfall": 0.0,
+      "overload": 5.78,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 59.8437,
+      "objective_fair": 59.8437,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0362
+    }
+  },
+  {
+    "scenario_id": "SC_098",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.74,
+      "objective_fair": -259.766,
+      "shortfall": 0.0,
+      "overload": 2.95,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 67.9611,
+      "objective_fair": 67.961,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 7.5019
+    }
+  },
+  {
+    "scenario_id": "SC_099",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.25,
+      "objective_fair": -103.4483,
+      "shortfall": 0.0,
+      "overload": 1.43,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 80.0453,
+      "objective_fair": 80.0449,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 4.083
+    }
+  },
+  {
+    "scenario_id": "SC_100",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 37.02,
+      "objective_fair": -779.1606,
+      "shortfall": 0.0,
+      "overload": 7.99,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 28.1412,
+      "objective_fair": 28.1412,
+      "shortfall": 0.62,
+      "overload": 0.0,
+      "runtime_s": 30.0379
+    }
+  },
+  {
+    "scenario_id": "SC_101",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 35.18,
+      "objective_fair": -661.1278,
+      "shortfall": 0.0,
+      "overload": 6.83,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 46.2644,
+      "objective_fair": 46.2644,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.134
+    }
+  },
+  {
+    "scenario_id": "SC_102",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 27.83,
+      "objective_fair": -58.2557,
+      "shortfall": 0.0,
+      "overload": 0.9,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 71.3501,
+      "objective_fair": 71.3501,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 6.5537
+    }
+  },
+  {
+    "scenario_id": "SC_103",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 27.96,
+      "objective_fair": -433.7768,
+      "shortfall": 0.0,
+      "overload": 4.6,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 60.6835,
+      "objective_fair": 60.6835,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1278
+    }
+  },
+  {
+    "scenario_id": "SC_104",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 31.31,
+      "objective_fair": -414.942,
+      "shortfall": 0.0,
+      "overload": 4.48,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -23.936,
+      "objective_fair": -23.936,
+      "shortfall": 3.6,
+      "overload": 0.0,
+      "runtime_s": 1.1561
+    }
+  },
+  {
+    "scenario_id": "SC_105",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 31.54,
+      "objective_fair": -552.6937,
+      "shortfall": 0.0,
+      "overload": 5.79,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 61.0564,
+      "objective_fair": 61.0563,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 2.4891
+    }
+  },
+  {
+    "scenario_id": "SC_106",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.88,
+      "objective_fair": -331.4071,
+      "shortfall": 0.0,
+      "overload": 3.45,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 33.1232,
+      "objective_fair": 33.123,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 29.999
+    }
+  },
+  {
+    "scenario_id": "SC_107",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 30.36,
+      "objective_fair": -601.1887,
+      "shortfall": 0.0,
+      "overload": 6.36,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 75.0278,
+      "objective_fair": 75.0275,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 26.8018
+    }
+  },
+  {
+    "scenario_id": "SC_108",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 30.28,
+      "objective_fair": -25.9156,
+      "shortfall": 0.0,
+      "overload": 0.51,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 49.8347,
+      "objective_fair": 49.8347,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1833
+    }
+  },
+  {
+    "scenario_id": "SC_109",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 35.85,
+      "objective_fair": -210.4624,
+      "shortfall": 0.0,
+      "overload": 2.34,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 42.9565,
+      "objective_fair": 42.9565,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1094
+    }
+  },
+  {
+    "scenario_id": "SC_110",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.9,
+      "objective_fair": -144.0333,
+      "shortfall": 0.0,
+      "overload": 1.76,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 64.7978,
+      "objective_fair": 64.7976,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.3098
+    }
+  },
+  {
+    "scenario_id": "SC_111",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.7,
+      "objective_fair": -93.7683,
+      "shortfall": 0.0,
+      "overload": 1.31,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 91.4825,
+      "objective_fair": 91.4823,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0268
+    }
+  },
+  {
+    "scenario_id": "SC_112",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.8,
+      "objective_fair": -119.7898,
+      "shortfall": 0.0,
+      "overload": 1.47,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 52.718,
+      "objective_fair": 52.718,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.6399
+    }
+  },
+  {
+    "scenario_id": "SC_113",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.88,
+      "objective_fair": -16.5909,
+      "shortfall": 0.98,
+      "overload": 0.16,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 8.5842,
+      "objective_fair": 8.5842,
+      "shortfall": 1.03,
+      "overload": 0.0,
+      "runtime_s": 0.0445
+    }
+  },
+  {
+    "scenario_id": "SC_114",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.45,
+      "objective_fair": -470.0855,
+      "shortfall": 0.0,
+      "overload": 4.83,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 26.487,
+      "objective_fair": 26.487,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.242
+    }
+  },
+  {
+    "scenario_id": "SC_115",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 30.21,
+      "objective_fair": -364.0366,
+      "shortfall": 0.0,
+      "overload": 3.9,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 61.0533,
+      "objective_fair": 61.0533,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0395
+    }
+  },
+  {
+    "scenario_id": "SC_116",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 28.98,
+      "objective_fair": -571.6522,
+      "shortfall": 0.0,
+      "overload": 5.98,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 57.7253,
+      "objective_fair": 57.7233,
+      "shortfall": 0.0001,
+      "overload": 0.0,
+      "runtime_s": 1.736
+    }
+  },
+  {
+    "scenario_id": "SC_117",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 25.31,
+      "objective_fair": -236.0782,
+      "shortfall": 0.0,
+      "overload": 2.59,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 53.1339,
+      "objective_fair": 53.1339,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 3.1534
+    }
+  },
+  {
+    "scenario_id": "SC_118",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 30.17,
+      "objective_fair": -30.4708,
+      "shortfall": 0.0,
+      "overload": 0.42,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 25.2651,
+      "objective_fair": 25.2651,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 8.0691
+    }
+  },
+  {
+    "scenario_id": "SC_119",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.98,
+      "objective_fair": -931.528,
+      "shortfall": 0.0,
+      "overload": 9.68,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -8.9582,
+      "objective_fair": -8.9582,
+      "shortfall": 3.44,
+      "overload": 0.0,
+      "runtime_s": 11.0054
+    }
+  },
+  {
+    "scenario_id": "SC_120",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.66,
+      "objective_fair": -567.0624,
+      "shortfall": 0.0,
+      "overload": 6.07,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 71.9003,
+      "objective_fair": 71.9003,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.745
+    }
+  },
+  {
+    "scenario_id": "SC_121",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.86,
+      "objective_fair": -138.3766,
+      "shortfall": 0.0,
+      "overload": 1.56,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 42.0142,
+      "objective_fair": 42.014,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.9393
+    }
+  },
+  {
+    "scenario_id": "SC_122",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.32,
+      "objective_fair": -134.5817,
+      "shortfall": 0.0,
+      "overload": 1.65,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 71.6914,
+      "objective_fair": 71.6911,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.3596
+    }
+  },
+  {
+    "scenario_id": "SC_123",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.03,
+      "objective_fair": -18.0716,
+      "shortfall": 0.0,
+      "overload": 0.36,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 44.0264,
+      "objective_fair": 44.0264,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0289
+    }
+  },
+  {
+    "scenario_id": "SC_124",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 35.02,
+      "objective_fair": -443.0524,
+      "shortfall": 0.0,
+      "overload": 4.76,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 41.1827,
+      "objective_fair": 41.1827,
+      "shortfall": 0.34,
+      "overload": 0.0,
+      "runtime_s": 0.0605
+    }
+  },
+  {
+    "scenario_id": "SC_125",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.03,
+      "objective_fair": -100.9297,
+      "shortfall": 0.0,
+      "overload": 1.23,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 48.4301,
+      "objective_fair": 48.4301,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.3621
+    }
+  },
+  {
+    "scenario_id": "SC_126",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 26.04,
+      "objective_fair": -576.3374,
+      "shortfall": 0.0,
+      "overload": 5.97,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 38.5615,
+      "objective_fair": 38.5615,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.0346
+    }
+  },
+  {
+    "scenario_id": "SC_127",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 30.0,
+      "objective_fair": -512.6857,
+      "shortfall": 0.0,
+      "overload": 5.3,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 45.5694,
+      "objective_fair": 45.5694,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.108
+    }
+  },
+  {
+    "scenario_id": "SC_128",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 40.17,
+      "objective_fair": -1027.2128,
+      "shortfall": 0.0,
+      "overload": 10.44,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -16.7114,
+      "objective_fair": -16.7114,
+      "shortfall": 2.57,
+      "overload": 0.0,
+      "runtime_s": 30.0375
+    }
+  },
+  {
+    "scenario_id": "SC_129",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 35.14,
+      "objective_fair": -1472.8717,
+      "shortfall": 0.0,
+      "overload": 14.91,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -11.3655,
+      "objective_fair": -11.3656,
+      "shortfall": 2.82,
+      "overload": 0.0,
+      "runtime_s": 1.5572
+    }
+  },
+  {
+    "scenario_id": "SC_130",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 30.35,
+      "objective_fair": -955.0382,
+      "shortfall": 0.0,
+      "overload": 9.72,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 3.0239,
+      "objective_fair": 3.0217,
+      "shortfall": 1.6501,
+      "overload": 0.0,
+      "runtime_s": 1.5012
+    }
+  },
+  {
+    "scenario_id": "SC_131",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 27.99,
+      "objective_fair": -214.2364,
+      "shortfall": 0.0,
+      "overload": 2.25,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 26.4076,
+      "objective_fair": 26.4075,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.11
+    }
+  },
+  {
+    "scenario_id": "SC_132",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 31.64,
+      "objective_fair": -320.714,
+      "shortfall": 0.0,
+      "overload": 3.75,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 110.009,
+      "objective_fair": 110.009,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0388
+    }
+  },
+  {
+    "scenario_id": "SC_133",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.46,
+      "objective_fair": -250.6308,
+      "shortfall": 0.0,
+      "overload": 2.7,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 43.4538,
+      "objective_fair": 43.4536,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.7365
+    }
+  },
+  {
+    "scenario_id": "SC_134",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.62,
+      "objective_fair": -649.6291,
+      "shortfall": 0.0,
+      "overload": 6.89,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 79.1864,
+      "objective_fair": 79.1861,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 3.3274
+    }
+  },
+  {
+    "scenario_id": "SC_135",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.68,
+      "objective_fair": -164.1672,
+      "shortfall": 0.0,
+      "overload": 2.06,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 83.5041,
+      "objective_fair": 83.5041,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0718
+    }
+  },
+  {
+    "scenario_id": "SC_136",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 28.43,
+      "objective_fair": -505.4493,
+      "shortfall": 0.0,
+      "overload": 5.48,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 91.117,
+      "objective_fair": 91.117,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0399
+    }
+  },
+  {
+    "scenario_id": "SC_137",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 31.36,
+      "objective_fair": -831.5331,
+      "shortfall": 0.0,
+      "overload": 8.66,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 79.6146,
+      "objective_fair": 79.6146,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.7604
+    }
+  },
+  {
+    "scenario_id": "SC_138",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.77,
+      "objective_fair": -63.1515,
+      "shortfall": 0.0,
+      "overload": 0.87,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 45.5295,
+      "objective_fair": 45.5295,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 2.1891
+    }
+  },
+  {
+    "scenario_id": "SC_139",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.08,
+      "objective_fair": -153.1668,
+      "shortfall": 0.0,
+      "overload": 1.77,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 48.4998,
+      "objective_fair": 48.4997,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.087
+    }
+  },
+  {
+    "scenario_id": "SC_140",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.16,
+      "objective_fair": -839.7951,
+      "shortfall": 0.0,
+      "overload": 8.72,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 75.1578,
+      "objective_fair": 75.1554,
+      "shortfall": 0.0001,
+      "overload": 0.0,
+      "runtime_s": 0.542
+    }
+  },
+  {
+    "scenario_id": "SC_141",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.04,
+      "objective_fair": -580.8379,
+      "shortfall": 0.0,
+      "overload": 6.14,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 73.4269,
+      "objective_fair": 73.4266,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 4.1462
+    }
+  },
+  {
+    "scenario_id": "SC_142",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 27.98,
+      "objective_fair": -391.1807,
+      "shortfall": 0.0,
+      "overload": 4.23,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 65.4109,
+      "objective_fair": 65.4108,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1055
+    }
+  },
+  {
+    "scenario_id": "SC_143",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 26.83,
+      "objective_fair": -601.4212,
+      "shortfall": 0.0,
+      "overload": 6.24,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 16.1491,
+      "objective_fair": 16.1491,
+      "shortfall": 1.01,
+      "overload": 0.0,
+      "runtime_s": 0.0844
+    }
+  },
+  {
+    "scenario_id": "SC_144",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.15,
+      "objective_fair": -274.0622,
+      "shortfall": 0.0,
+      "overload": 3.03,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 52.5803,
+      "objective_fair": 52.5803,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0642
+    }
+  },
+  {
+    "scenario_id": "SC_145",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.91,
+      "objective_fair": -188.1297,
+      "shortfall": 0.0,
+      "overload": 2.05,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 36.7875,
+      "objective_fair": 36.7873,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.7923
+    }
+  },
+  {
+    "scenario_id": "SC_146",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 30.97,
+      "objective_fair": -285.3442,
+      "shortfall": 0.0,
+      "overload": 3.1,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 57.8598,
+      "objective_fair": 57.8598,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.555
+    }
+  },
+  {
+    "scenario_id": "SC_147",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.47,
+      "objective_fair": -58.003,
+      "shortfall": 0.0,
+      "overload": 0.9,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 68.1162,
+      "objective_fair": 68.1162,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 4.3569
+    }
+  },
+  {
+    "scenario_id": "SC_148",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.98,
+      "objective_fair": -279.7602,
+      "shortfall": 0.0,
+      "overload": 2.98,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 36.9463,
+      "objective_fair": 36.9463,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 9.74
+    }
+  },
+  {
+    "scenario_id": "SC_149",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.71,
+      "objective_fair": -754.8252,
+      "shortfall": 0.0,
+      "overload": 7.89,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 56.0553,
+      "objective_fair": 56.0551,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.389
+    }
+  },
+  {
+    "scenario_id": "SC_150",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 30.02,
+      "objective_fair": -803.1844,
+      "shortfall": 0.0,
+      "overload": 8.15,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 27.4986,
+      "objective_fair": 27.4985,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 2.1703
+    }
+  },
+  {
+    "scenario_id": "SC_151",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 30.62,
+      "objective_fair": -39.2637,
+      "shortfall": 0.0,
+      "overload": 0.62,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 52.7828,
+      "objective_fair": 52.7826,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0514
+    }
+  },
+  {
+    "scenario_id": "SC_152",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.33,
+      "objective_fair": -965.9216,
+      "shortfall": 0.0,
+      "overload": 9.93,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -54.9248,
+      "objective_fair": -54.9268,
+      "shortfall": 5.3601,
+      "overload": 0.0,
+      "runtime_s": 30.0339
+    }
+  },
+  {
+    "scenario_id": "SC_153",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 28.75,
+      "objective_fair": -629.9483,
+      "shortfall": 0.0,
+      "overload": 6.63,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -66.9959,
+      "objective_fair": -66.9959,
+      "shortfall": 6.2,
+      "overload": 0.0,
+      "runtime_s": 0.2082
+    }
+  },
+  {
+    "scenario_id": "SC_154",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.3,
+      "objective_fair": -324.3226,
+      "shortfall": 0.0,
+      "overload": 3.41,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 45.61,
+      "objective_fair": 45.6099,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 3.5738
+    }
+  },
+  {
+    "scenario_id": "SC_155",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.18,
+      "objective_fair": -568.5488,
+      "shortfall": 0.0,
+      "overload": 5.92,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 58.6064,
+      "objective_fair": 58.6065,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 8.0049
+    }
+  },
+  {
+    "scenario_id": "SC_156",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.68,
+      "objective_fair": -32.1565,
+      "shortfall": 0.0,
+      "overload": 0.56,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 53.002,
+      "objective_fair": 53.002,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.4814
+    }
+  },
+  {
+    "scenario_id": "SC_157",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 25.6,
+      "objective_fair": -631.4258,
+      "shortfall": 0.0,
+      "overload": 6.53,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 44.2822,
+      "objective_fair": 44.2822,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.2411
+    }
+  },
+  {
+    "scenario_id": "SC_158",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.68,
+      "objective_fair": -312.3283,
+      "shortfall": 0.0,
+      "overload": 3.48,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 77.96,
+      "objective_fair": 77.96,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 4.9303
+    }
+  },
+  {
+    "scenario_id": "SC_159",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.6,
+      "objective_fair": -381.6794,
+      "shortfall": 0.0,
+      "overload": 4.04,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 49.995,
+      "objective_fair": 49.995,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.0987
+    }
+  },
+  {
+    "scenario_id": "SC_160",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.83,
+      "objective_fair": -887.2471,
+      "shortfall": 0.0,
+      "overload": 9.11,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 47.8162,
+      "objective_fair": 47.8121,
+      "shortfall": 0.0802,
+      "overload": 0.0,
+      "runtime_s": 0.4761
+    }
+  },
+  {
+    "scenario_id": "SC_161",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.75,
+      "objective_fair": -681.0851,
+      "shortfall": 0.0,
+      "overload": 7.03,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 37.547,
+      "objective_fair": 37.547,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0957
+    }
+  },
+  {
+    "scenario_id": "SC_162",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.05,
+      "objective_fair": -510.1217,
+      "shortfall": 0.0,
+      "overload": 5.33,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 48.4373,
+      "objective_fair": 48.4374,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.0993
+    }
+  },
+  {
+    "scenario_id": "SC_163",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.21,
+      "objective_fair": -247.1836,
+      "shortfall": 0.0,
+      "overload": 2.78,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 68.207,
+      "objective_fair": 68.2068,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.9915
+    }
+  },
+  {
+    "scenario_id": "SC_164",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 30.47,
+      "objective_fair": -129.2961,
+      "shortfall": 0.0,
+      "overload": 1.59,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 67.843,
+      "objective_fair": 67.8427,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0337
+    }
+  },
+  {
+    "scenario_id": "SC_165",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.15,
+      "objective_fair": -798.8742,
+      "shortfall": 0.0,
+      "overload": 8.23,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -31.9333,
+      "objective_fair": -31.9354,
+      "shortfall": 3.8301,
+      "overload": 0.0,
+      "runtime_s": 17.3683
+    }
+  },
+  {
+    "scenario_id": "SC_166",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 26.62,
+      "objective_fair": -274.8613,
+      "shortfall": 0.0,
+      "overload": 3.02,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 49.1657,
+      "objective_fair": 49.1657,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 2.8436
+    }
+  },
+  {
+    "scenario_id": "SC_167",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.09,
+      "objective_fair": -1083.9966,
+      "shortfall": 0.0,
+      "overload": 11.24,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -34.8135,
+      "objective_fair": -34.8158,
+      "shortfall": 5.1601,
+      "overload": 0.0,
+      "runtime_s": 8.9424
+    }
+  },
+  {
+    "scenario_id": "SC_168",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.64,
+      "objective_fair": -651.2459,
+      "shortfall": 0.0,
+      "overload": 7.08,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 61.3668,
+      "objective_fair": 61.3668,
+      "shortfall": 1.722,
+      "overload": 0.0,
+      "runtime_s": 0.6944
+    }
+  },
+  {
+    "scenario_id": "SC_169",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.86,
+      "objective_fair": -733.758,
+      "shortfall": 0.0,
+      "overload": 7.64,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 62.9083,
+      "objective_fair": 62.9063,
+      "shortfall": 0.0001,
+      "overload": 0.0,
+      "runtime_s": 30.0348
+    }
+  },
+  {
+    "scenario_id": "SC_170",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 25.35,
+      "objective_fair": -437.1304,
+      "shortfall": 0.0,
+      "overload": 4.64,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 52.7665,
+      "objective_fair": 52.7665,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.9513
+    }
+  },
+  {
+    "scenario_id": "SC_171",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.81,
+      "objective_fair": -209.4153,
+      "shortfall": 1.17,
+      "overload": 2.13,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -7.909,
+      "objective_fair": -7.909,
+      "shortfall": 2.66,
+      "overload": 0.0,
+      "runtime_s": 0.0354
+    }
+  },
+  {
+    "scenario_id": "SC_172",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 27.03,
+      "objective_fair": -170.6992,
+      "shortfall": 0.0,
+      "overload": 1.88,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 38.2381,
+      "objective_fair": 38.2381,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.7881
+    }
+  },
+  {
+    "scenario_id": "SC_173",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.59,
+      "objective_fair": -963.0492,
+      "shortfall": 0.0,
+      "overload": 9.89,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 31.1455,
+      "objective_fair": 31.1434,
+      "shortfall": 1.1441,
+      "overload": 0.0,
+      "runtime_s": 1.5956
+    }
+  },
+  {
+    "scenario_id": "SC_174",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 35.16,
+      "objective_fair": -645.455,
+      "shortfall": 0.0,
+      "overload": 6.63,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 42.3126,
+      "objective_fair": 42.3125,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.6258
+    }
+  },
+  {
+    "scenario_id": "SC_175",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 27.39,
+      "objective_fair": -580.996,
+      "shortfall": 0.0,
+      "overload": 5.98,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 38.7813,
+      "objective_fair": 38.7813,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.4244
+    }
+  },
+  {
+    "scenario_id": "SC_176",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.78,
+      "objective_fair": -108.226,
+      "shortfall": 0.0,
+      "overload": 1.25,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 41.1133,
+      "objective_fair": 41.1132,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 21.2275
+    }
+  },
+  {
+    "scenario_id": "SC_177",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.04,
+      "objective_fair": -857.0459,
+      "shortfall": 0.0,
+      "overload": 8.86,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 40.3267,
+      "objective_fair": 40.3267,
+      "shortfall": 0.8,
+      "overload": 0.0,
+      "runtime_s": 13.0637
+    }
+  },
+  {
+    "scenario_id": "SC_178",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 31.97,
+      "objective_fair": -247.2212,
+      "shortfall": 0.0,
+      "overload": 2.76,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 68.1869,
+      "objective_fair": 68.1868,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 2.0487
+    }
+  },
+  {
+    "scenario_id": "SC_179",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 28.05,
+      "objective_fair": -102.2582,
+      "shortfall": 4.66,
+      "overload": 0.46,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -28.6877,
+      "objective_fair": -28.6877,
+      "shortfall": 4.66,
+      "overload": 0.0,
+      "runtime_s": 2.0489
+    }
+  },
+  {
+    "scenario_id": "SC_180",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.81,
+      "objective_fair": -173.8482,
+      "shortfall": 0.0,
+      "overload": 1.88,
+      "runtime_s": 0.0003
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 37.2965,
+      "objective_fair": 37.2965,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.1104
+    }
+  },
+  {
+    "scenario_id": "SC_181",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 31.41,
+      "objective_fair": -337.9366,
+      "shortfall": 0.0,
+      "overload": 3.65,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 53.1081,
+      "objective_fair": 53.108,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 2.012
+    }
+  },
+  {
+    "scenario_id": "SC_182",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 27.94,
+      "objective_fair": -480.1344,
+      "shortfall": 0.0,
+      "overload": 5.01,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 40.5048,
+      "objective_fair": 40.5048,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 8.3959
+    }
+  },
+  {
+    "scenario_id": "SC_183",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.85,
+      "objective_fair": -104.4553,
+      "shortfall": 0.0,
+      "overload": 1.27,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 55.7822,
+      "objective_fair": 55.7817,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.8172
+    }
+  },
+  {
+    "scenario_id": "SC_184",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.8,
+      "objective_fair": -480.5014,
+      "shortfall": 0.0,
+      "overload": 5.03,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 16.8215,
+      "objective_fair": 16.8194,
+      "shortfall": 1.1601,
+      "overload": 0.0,
+      "runtime_s": 0.7205
+    }
+  },
+  {
+    "scenario_id": "SC_185",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.91,
+      "objective_fair": -1058.0662,
+      "shortfall": 0.0,
+      "overload": 10.95,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -12.6315,
+      "objective_fair": -12.6315,
+      "shortfall": 4.1,
+      "overload": 0.0,
+      "runtime_s": 1.0462
+    }
+  },
+  {
+    "scenario_id": "SC_186",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 28.93,
+      "objective_fair": -612.58,
+      "shortfall": 0.0,
+      "overload": 6.35,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 47.5031,
+      "objective_fair": 47.5031,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0362
+    }
+  },
+  {
+    "scenario_id": "SC_187",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.94,
+      "objective_fair": -217.1036,
+      "shortfall": 0.0,
+      "overload": 2.43,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 62.3029,
+      "objective_fair": 62.3028,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 21.6441
+    }
+  },
+  {
+    "scenario_id": "SC_188",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.85,
+      "objective_fair": -210.9634,
+      "shortfall": 0.0,
+      "overload": 2.3,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 47.406,
+      "objective_fair": 47.4059,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.0583
+    }
+  },
+  {
+    "scenario_id": "SC_189",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.64,
+      "objective_fair": -836.674,
+      "shortfall": 0.0,
+      "overload": 8.55,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 41.5991,
+      "objective_fair": 41.599,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.2221
+    }
+  },
+  {
+    "scenario_id": "SC_190",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.34,
+      "objective_fair": -723.423,
+      "shortfall": 0.0,
+      "overload": 7.54,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 57.9805,
+      "objective_fair": 57.9784,
+      "shortfall": 0.0001,
+      "overload": 0.0,
+      "runtime_s": 0.7878
+    }
+  },
+  {
+    "scenario_id": "SC_191",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 35.87,
+      "objective_fair": -663.3242,
+      "shortfall": 0.0,
+      "overload": 7.18,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 98.2203,
+      "objective_fair": 98.2202,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 3.9172
+    }
+  },
+  {
+    "scenario_id": "SC_192",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.45,
+      "objective_fair": -439.0244,
+      "shortfall": 0.0,
+      "overload": 4.55,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 28.8281,
+      "objective_fair": 28.8281,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.8588
+    }
+  },
+  {
+    "scenario_id": "SC_193",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.87,
+      "objective_fair": -946.9492,
+      "shortfall": 0.0,
+      "overload": 9.63,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 23.3645,
+      "objective_fair": 23.3624,
+      "shortfall": 0.5501,
+      "overload": 0.0,
+      "runtime_s": 24.0131
+    }
+  },
+  {
+    "scenario_id": "SC_194",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 28.88,
+      "objective_fair": -691.2054,
+      "shortfall": 0.0,
+      "overload": 7.08,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 35.6393,
+      "objective_fair": 35.6393,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.5636
+    }
+  },
+  {
+    "scenario_id": "SC_195",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.06,
+      "objective_fair": -438.433,
+      "shortfall": 0.0,
+      "overload": 4.5,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 27.9964,
+      "objective_fair": 27.9963,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 8.8925
+    }
+  },
+  {
+    "scenario_id": "SC_196",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.74,
+      "objective_fair": -284.8688,
+      "shortfall": 0.0,
+      "overload": 3.05,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 46.0507,
+      "objective_fair": 46.0507,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.3743
+    }
+  },
+  {
+    "scenario_id": "SC_197",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.57,
+      "objective_fair": -540.4654,
+      "shortfall": 0.0,
+      "overload": 5.69,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 49.0263,
+      "objective_fair": 49.0263,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 12.598
+    }
+  },
+  {
+    "scenario_id": "SC_198",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 35.02,
+      "objective_fair": -334.8688,
+      "shortfall": 0.0,
+      "overload": 3.63,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 73.0766,
+      "objective_fair": 73.0763,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.7375
+    }
+  },
+  {
+    "scenario_id": "SC_199",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 28.07,
+      "objective_fair": -12.9491,
+      "shortfall": 0.0,
+      "overload": 0.35,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 54.4202,
+      "objective_fair": 54.4202,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.1462
+    }
+  },
+  {
+    "scenario_id": "SC_200",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 27.16,
+      "objective_fair": -216.9508,
+      "shortfall": 0.0,
+      "overload": 2.31,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 34.4306,
+      "objective_fair": 34.4306,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1903
+    }
+  },
+  {
+    "scenario_id": "SC_201",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 34.55,
+      "objective_fair": -874.0598,
+      "shortfall": 0.0,
+      "overload": 8.97,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -93.7452,
+      "objective_fair": -93.7452,
+      "shortfall": 6.71,
+      "overload": 0.0,
+      "runtime_s": 30.0622
+    }
+  },
+  {
+    "scenario_id": "SC_202",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 36.32,
+      "objective_fair": -683.82,
+      "shortfall": 0.0,
+      "overload": 7.28,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 35.5605,
+      "objective_fair": 35.5605,
+      "shortfall": 2.12,
+      "overload": 0.0,
+      "runtime_s": 0.1178
+    }
+  },
+  {
+    "scenario_id": "SC_203",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 26.16,
+      "objective_fair": -52.5759,
+      "shortfall": 0.0,
+      "overload": 0.92,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 84.9495,
+      "objective_fair": 84.9495,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 9.7747
+    }
+  },
+  {
+    "scenario_id": "SC_204",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 32.34,
+      "objective_fair": -72.7419,
+      "shortfall": 0.0,
+      "overload": 0.82,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 19.0596,
+      "objective_fair": 19.0596,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1005
+    }
+  },
+  {
+    "scenario_id": "SC_205",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 35.34,
+      "objective_fair": -189.8959,
+      "shortfall": 0.0,
+      "overload": 2.28,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 89.8551,
+      "objective_fair": 89.855,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.6683
+    }
+  },
+  {
+    "scenario_id": "SC_206",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 35.18,
+      "objective_fair": -430.2186,
+      "shortfall": 0.0,
+      "overload": 4.67,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 81.1369,
+      "objective_fair": 81.1367,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 30.0296
+    }
+  },
+  {
+    "scenario_id": "SC_207",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 35.33,
+      "objective_fair": -194.296,
+      "shortfall": 0.0,
+      "overload": 2.12,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 40.6815,
+      "objective_fair": 40.6815,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.5906
+    }
+  },
+  {
+    "scenario_id": "SC_208",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.64,
+      "objective_fair": -568.517,
+      "shortfall": 0.0,
+      "overload": 5.95,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 54.2182,
+      "objective_fair": 54.2182,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.2989
+    }
+  },
+  {
+    "scenario_id": "SC_209",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 33.44,
+      "objective_fair": -422.5919,
+      "shortfall": 0.0,
+      "overload": 4.3,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 14.9904,
+      "objective_fair": 14.9904,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 0.1911
+    }
+  },
+  {
+    "scenario_id": "SC_210",
+    "scenario_type": "Normal",
+    "greedy": {
+      "feasible": true,
+      "objective_value": 29.44,
+      "objective_fair": -615.6127,
+      "shortfall": 0.0,
+      "overload": 6.29,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": 35.1636,
+      "objective_fair": 35.1637,
+      "shortfall": 0.0,
+      "overload": 0.0,
+      "runtime_s": 1.4068
+    }
+  },
+  {
+    "scenario_id": "SC_211",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 20.75,
+      "objective_fair": -778.3429,
+      "shortfall": 20.54,
+      "overload": 4.03,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -425.3211,
+      "objective_fair": -425.3212,
+      "shortfall": 24.57,
+      "overload": 0.0,
+      "runtime_s": 0.2962
+    }
+  },
+  {
+    "scenario_id": "SC_212",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.28,
+      "objective_fair": -964.8114,
+      "shortfall": 21.1,
+      "overload": 5.64,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -495.0738,
+      "objective_fair": -495.0739,
+      "shortfall": 26.74,
+      "overload": 0.0,
+      "runtime_s": 1.1663
+    }
+  },
+  {
+    "scenario_id": "SC_213",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 21.85,
+      "objective_fair": -640.7211,
+      "shortfall": 17.35,
+      "overload": 3.41,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -340.8678,
+      "objective_fair": -340.8679,
+      "shortfall": 21.024,
+      "overload": 0.0,
+      "runtime_s": 1.0636
+    }
+  },
+  {
+    "scenario_id": "SC_214",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.68,
+      "objective_fair": -840.054,
+      "shortfall": 17.08,
+      "overload": 5.32,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -379.3853,
+      "objective_fair": -379.3853,
+      "shortfall": 22.4,
+      "overload": 0.0,
+      "runtime_s": 30.043
+    }
+  },
+  {
+    "scenario_id": "SC_215",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 26.77,
+      "objective_fair": -1329.8737,
+      "shortfall": 18.62,
+      "overload": 10.09,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -498.0976,
+      "objective_fair": -498.1045,
+      "shortfall": 28.7103,
+      "overload": 0.0,
+      "runtime_s": 1.4032
+    }
+  },
+  {
+    "scenario_id": "SC_216",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.74,
+      "objective_fair": -1298.1856,
+      "shortfall": 18.44,
+      "overload": 9.74,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -491.3021,
+      "objective_fair": -491.3021,
+      "shortfall": 28.18,
+      "overload": 0.0,
+      "runtime_s": 2.4918
+    }
+  },
+  {
+    "scenario_id": "SC_217",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 26.12,
+      "objective_fair": -1481.4082,
+      "shortfall": 18.22,
+      "overload": 12.0,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -518.9739,
+      "objective_fair": -518.9739,
+      "shortfall": 30.22,
+      "overload": 0.0,
+      "runtime_s": 0.2645
+    }
+  },
+  {
+    "scenario_id": "SC_218",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.46,
+      "objective_fair": -1120.1635,
+      "shortfall": 15.7,
+      "overload": 8.74,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -395.0116,
+      "objective_fair": -395.0118,
+      "shortfall": 24.44,
+      "overload": 0.0,
+      "runtime_s": 0.4519
+    }
+  },
+  {
+    "scenario_id": "SC_219",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 22.42,
+      "objective_fair": -1223.8772,
+      "shortfall": 18.38,
+      "overload": 8.86,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -497.7211,
+      "objective_fair": -497.7211,
+      "shortfall": 27.24,
+      "overload": 0.0,
+      "runtime_s": 0.2981
+    }
+  },
+  {
+    "scenario_id": "SC_220",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.63,
+      "objective_fair": -1344.3073,
+      "shortfall": 20.09,
+      "overload": 9.79,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -535.4531,
+      "objective_fair": -535.4532,
+      "shortfall": 29.88,
+      "overload": 0.0,
+      "runtime_s": 30.0364
+    }
+  },
+  {
+    "scenario_id": "SC_221",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.63,
+      "objective_fair": -1168.196,
+      "shortfall": 19.49,
+      "overload": 8.27,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -477.6156,
+      "objective_fair": -477.6156,
+      "shortfall": 27.76,
+      "overload": 0.0,
+      "runtime_s": 2.6364
+    }
+  },
+  {
+    "scenario_id": "SC_222",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.32,
+      "objective_fair": -939.22,
+      "shortfall": 20.62,
+      "overload": 5.76,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -451.0685,
+      "objective_fair": -451.0685,
+      "shortfall": 26.38,
+      "overload": 0.0,
+      "runtime_s": 2.326
+    }
+  },
+  {
+    "scenario_id": "SC_223",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.45,
+      "objective_fair": -890.7614,
+      "shortfall": 18.13,
+      "overload": 5.65,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -424.0806,
+      "objective_fair": -424.0806,
+      "shortfall": 23.78,
+      "overload": 0.0,
+      "runtime_s": 1.4402
+    }
+  },
+  {
+    "scenario_id": "SC_224",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.8,
+      "objective_fair": -895.4469,
+      "shortfall": 18.56,
+      "overload": 5.52,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -426.9643,
+      "objective_fair": -426.9643,
+      "shortfall": 24.08,
+      "overload": 0.0,
+      "runtime_s": 30.0531
+    }
+  },
+  {
+    "scenario_id": "SC_225",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 26.39,
+      "objective_fair": -1352.5436,
+      "shortfall": 18.45,
+      "overload": 10.51,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -489.9862,
+      "objective_fair": -489.9863,
+      "shortfall": 28.96,
+      "overload": 0.0,
+      "runtime_s": 1.3046
+    }
+  },
+  {
+    "scenario_id": "SC_226",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.09,
+      "objective_fair": -904.5619,
+      "shortfall": 20.6,
+      "overload": 5.65,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -430.8519,
+      "objective_fair": -430.8519,
+      "shortfall": 26.25,
+      "overload": 0.0,
+      "runtime_s": 3.3557
+    }
+  },
+  {
+    "scenario_id": "SC_227",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 25.13,
+      "objective_fair": -1380.4523,
+      "shortfall": 18.33,
+      "overload": 10.81,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -498.5075,
+      "objective_fair": -498.5075,
+      "shortfall": 29.14,
+      "overload": 0.0,
+      "runtime_s": 0.8585
+    }
+  },
+  {
+    "scenario_id": "SC_228",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.16,
+      "objective_fair": -778.7253,
+      "shortfall": 17.79,
+      "overload": 4.72,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -379.2953,
+      "objective_fair": -379.2953,
+      "shortfall": 22.51,
+      "overload": 0.0,
+      "runtime_s": 1.7059
+    }
+  },
+  {
+    "scenario_id": "SC_229",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 22.63,
+      "objective_fair": -1101.905,
+      "shortfall": 20.85,
+      "overload": 7.39,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -478.5207,
+      "objective_fair": -478.5233,
+      "shortfall": 28.2401,
+      "overload": 0.0,
+      "runtime_s": 1.6759
+    }
+  },
+  {
+    "scenario_id": "SC_230",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.87,
+      "objective_fair": -902.8519,
+      "shortfall": 16.55,
+      "overload": 6.11,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -385.489,
+      "objective_fair": -385.489,
+      "shortfall": 22.66,
+      "overload": 0.0,
+      "runtime_s": 16.9317
+    }
+  },
+  {
+    "scenario_id": "SC_231",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.16,
+      "objective_fair": -1335.1652,
+      "shortfall": 17.41,
+      "overload": 10.44,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -477.6774,
+      "objective_fair": -477.6775,
+      "shortfall": 27.85,
+      "overload": 0.0,
+      "runtime_s": 0.3583
+    }
+  },
+  {
+    "scenario_id": "SC_232",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 25.58,
+      "objective_fair": -1683.6844,
+      "shortfall": 19.68,
+      "overload": 13.26,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -600.8607,
+      "objective_fair": -600.8607,
+      "shortfall": 32.94,
+      "overload": 0.0,
+      "runtime_s": 1.6228
+    }
+  },
+  {
+    "scenario_id": "SC_233",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.33,
+      "objective_fair": -1107.3334,
+      "shortfall": 16.02,
+      "overload": 8.37,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -424.2508,
+      "objective_fair": -424.2508,
+      "shortfall": 24.39,
+      "overload": 0.0,
+      "runtime_s": 1.6558
+    }
+  },
+  {
+    "scenario_id": "SC_234",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.3,
+      "objective_fair": -797.5253,
+      "shortfall": 19.49,
+      "overload": 4.62,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -406.3525,
+      "objective_fair": -406.3525,
+      "shortfall": 24.11,
+      "overload": 0.0,
+      "runtime_s": 0.3227
+    }
+  },
+  {
+    "scenario_id": "SC_235",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.97,
+      "objective_fair": -964.6366,
+      "shortfall": 20.59,
+      "overload": 5.89,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -481.5496,
+      "objective_fair": -481.5496,
+      "shortfall": 26.48,
+      "overload": 0.0,
+      "runtime_s": 2.2851
+    }
+  },
+  {
+    "scenario_id": "SC_236",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 22.84,
+      "objective_fair": -679.5579,
+      "shortfall": 18.38,
+      "overload": 3.73,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -349.553,
+      "objective_fair": -349.5531,
+      "shortfall": 22.11,
+      "overload": 0.0,
+      "runtime_s": 30.0525
+    }
+  },
+  {
+    "scenario_id": "SC_237",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 25.0,
+      "objective_fair": -1433.65,
+      "shortfall": 16.38,
+      "overload": 11.64,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -474.7152,
+      "objective_fair": -474.7152,
+      "shortfall": 28.02,
+      "overload": 0.0,
+      "runtime_s": 0.9269
+    }
+  },
+  {
+    "scenario_id": "SC_238",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.57,
+      "objective_fair": -1352.5217,
+      "shortfall": 17.25,
+      "overload": 10.45,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -488.5089,
+      "objective_fair": -488.5089,
+      "shortfall": 27.7,
+      "overload": 0.0,
+      "runtime_s": 2.1659
+    }
+  },
+  {
+    "scenario_id": "SC_239",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 22.99,
+      "objective_fair": -1286.3373,
+      "shortfall": 16.71,
+      "overload": 9.99,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -475.8745,
+      "objective_fair": -475.8746,
+      "shortfall": 26.7,
+      "overload": 0.0,
+      "runtime_s": 0.3741
+    }
+  },
+  {
+    "scenario_id": "SC_240",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.5,
+      "objective_fair": -1268.8895,
+      "shortfall": 20.77,
+      "overload": 9.14,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -519.4553,
+      "objective_fair": -519.46,
+      "shortfall": 29.9102,
+      "overload": 0.0,
+      "runtime_s": 0.9725
+    }
+  },
+  {
+    "scenario_id": "SC_241",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.24,
+      "objective_fair": -911.5504,
+      "shortfall": 18.64,
+      "overload": 5.96,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -409.0577,
+      "objective_fair": -409.0602,
+      "shortfall": 24.6001,
+      "overload": 0.0,
+      "runtime_s": 1.5941
+    }
+  },
+  {
+    "scenario_id": "SC_242",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 22.76,
+      "objective_fair": -1071.0906,
+      "shortfall": 15.8,
+      "overload": 7.8,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -410.8306,
+      "objective_fair": -410.8306,
+      "shortfall": 23.6,
+      "overload": 0.0,
+      "runtime_s": 7.3218
+    }
+  },
+  {
+    "scenario_id": "SC_243",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.68,
+      "objective_fair": -1196.8427,
+      "shortfall": 17.71,
+      "overload": 8.68,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -468.7632,
+      "objective_fair": -468.7633,
+      "shortfall": 26.47,
+      "overload": 0.0,
+      "runtime_s": 1.11
+    }
+  },
+  {
+    "scenario_id": "SC_244",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.67,
+      "objective_fair": -1109.7545,
+      "shortfall": 18.35,
+      "overload": 7.87,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -466.5154,
+      "objective_fair": -466.5154,
+      "shortfall": 26.22,
+      "overload": 0.0,
+      "runtime_s": 30.0452
+    }
+  },
+  {
+    "scenario_id": "SC_245",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.23,
+      "objective_fair": -1029.528,
+      "shortfall": 19.44,
+      "overload": 6.71,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -453.0665,
+      "objective_fair": -453.0665,
+      "shortfall": 26.15,
+      "overload": 0.0,
+      "runtime_s": 30.0602
+    }
+  },
+  {
+    "scenario_id": "SC_246",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 22.51,
+      "objective_fair": -626.6783,
+      "shortfall": 18.27,
+      "overload": 3.03,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -364.6842,
+      "objective_fair": -364.6842,
+      "shortfall": 21.3,
+      "overload": 0.0,
+      "runtime_s": 0.8857
+    }
+  },
+  {
+    "scenario_id": "SC_247",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 22.91,
+      "objective_fair": -1003.0358,
+      "shortfall": 17.87,
+      "overload": 6.91,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -427.8008,
+      "objective_fair": -427.8009,
+      "shortfall": 24.78,
+      "overload": 0.0,
+      "runtime_s": 4.6948
+    }
+  },
+  {
+    "scenario_id": "SC_248",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 25.06,
+      "objective_fair": -1288.653,
+      "shortfall": 18.57,
+      "overload": 9.66,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -484.6188,
+      "objective_fair": -484.6208,
+      "shortfall": 28.2301,
+      "overload": 0.0,
+      "runtime_s": 0.4267
+    }
+  },
+  {
+    "scenario_id": "SC_249",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.7,
+      "objective_fair": -1345.2367,
+      "shortfall": 19.42,
+      "overload": 10.1,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -519.8833,
+      "objective_fair": -519.8833,
+      "shortfall": 29.52,
+      "overload": 0.0,
+      "runtime_s": 0.1556
+    }
+  },
+  {
+    "scenario_id": "SC_250",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.32,
+      "objective_fair": -1115.6149,
+      "shortfall": 19.99,
+      "overload": 7.84,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -469.8608,
+      "objective_fair": -469.861,
+      "shortfall": 27.83,
+      "overload": 0.0,
+      "runtime_s": 1.3079
+    }
+  },
+  {
+    "scenario_id": "SC_251",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.38,
+      "objective_fair": -824.3334,
+      "shortfall": 16.57,
+      "overload": 5.66,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -341.78,
+      "objective_fair": -341.78,
+      "shortfall": 22.23,
+      "overload": 0.0,
+      "runtime_s": 5.1585
+    }
+  },
+  {
+    "scenario_id": "SC_252",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.95,
+      "objective_fair": -989.7171,
+      "shortfall": 16.73,
+      "overload": 7.03,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -380.3454,
+      "objective_fair": -380.3454,
+      "shortfall": 23.76,
+      "overload": 0.0,
+      "runtime_s": 1.0521
+    }
+  },
+  {
+    "scenario_id": "SC_253",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.07,
+      "objective_fair": -638.2876,
+      "shortfall": 15.57,
+      "overload": 3.79,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -319.6451,
+      "objective_fair": -319.6452,
+      "shortfall": 19.866,
+      "overload": 0.0,
+      "runtime_s": 3.6276
+    }
+  },
+  {
+    "scenario_id": "SC_254",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 25.06,
+      "objective_fair": -1223.4495,
+      "shortfall": 21.0,
+      "overload": 8.46,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -514.7396,
+      "objective_fair": -514.7396,
+      "shortfall": 29.46,
+      "overload": 0.0,
+      "runtime_s": 2.1235
+    }
+  },
+  {
+    "scenario_id": "SC_255",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.11,
+      "objective_fair": -777.2373,
+      "shortfall": 15.82,
+      "overload": 5.15,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -337.0021,
+      "objective_fair": -337.0021,
+      "shortfall": 20.97,
+      "overload": 0.0,
+      "runtime_s": 1.5784
+    }
+  },
+  {
+    "scenario_id": "SC_256",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.62,
+      "objective_fair": -1404.1807,
+      "shortfall": 18.77,
+      "overload": 10.98,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -517.3347,
+      "objective_fair": -517.3347,
+      "shortfall": 29.75,
+      "overload": 0.0,
+      "runtime_s": 0.2565
+    }
+  },
+  {
+    "scenario_id": "SC_257",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.76,
+      "objective_fair": -1301.1988,
+      "shortfall": 17.73,
+      "overload": 9.8,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -496.3651,
+      "objective_fair": -496.3651,
+      "shortfall": 27.53,
+      "overload": 0.0,
+      "runtime_s": 1.7303
+    }
+  },
+  {
+    "scenario_id": "SC_258",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.72,
+      "objective_fair": -846.3609,
+      "shortfall": 17.17,
+      "overload": 5.59,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -369.033,
+      "objective_fair": -369.033,
+      "shortfall": 22.76,
+      "overload": 0.0,
+      "runtime_s": 1.9923
+    }
+  },
+  {
+    "scenario_id": "SC_259",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 21.05,
+      "objective_fair": -954.5072,
+      "shortfall": 16.65,
+      "overload": 6.75,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -386.186,
+      "objective_fair": -386.186,
+      "shortfall": 22.7,
+      "overload": 0.0,
+      "runtime_s": 0.3693
+    }
+  },
+  {
+    "scenario_id": "SC_260",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.04,
+      "objective_fair": -1456.21,
+      "shortfall": 15.51,
+      "overload": 11.92,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -498.522,
+      "objective_fair": -498.5221,
+      "shortfall": 27.43,
+      "overload": 0.0,
+      "runtime_s": 0.2091
+    }
+  },
+  {
+    "scenario_id": "SC_261",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 22.93,
+      "objective_fair": -1404.595,
+      "shortfall": 21.28,
+      "overload": 10.25,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -563.6421,
+      "objective_fair": -563.6421,
+      "shortfall": 31.53,
+      "overload": 0.0,
+      "runtime_s": 1.703
+    }
+  },
+  {
+    "scenario_id": "SC_262",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.74,
+      "objective_fair": -924.3633,
+      "shortfall": 20.05,
+      "overload": 5.86,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -432.1527,
+      "objective_fair": -432.1527,
+      "shortfall": 25.91,
+      "overload": 0.0,
+      "runtime_s": 0.562
+    }
+  },
+  {
+    "scenario_id": "SC_263",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 23.15,
+      "objective_fair": -1301.4579,
+      "shortfall": 17.96,
+      "overload": 9.67,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -516.8733,
+      "objective_fair": -516.8734,
+      "shortfall": 27.63,
+      "overload": 0.0,
+      "runtime_s": 0.6908
+    }
+  },
+  {
+    "scenario_id": "SC_264",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 21.77,
+      "objective_fair": -745.6513,
+      "shortfall": 18.51,
+      "overload": 4.05,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -410.5835,
+      "objective_fair": -410.5835,
+      "shortfall": 22.56,
+      "overload": 0.0,
+      "runtime_s": 3.4495
+    }
+  },
+  {
+    "scenario_id": "SC_265",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 20.19,
+      "objective_fair": -1170.8713,
+      "shortfall": 20.53,
+      "overload": 8.02,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -506.9132,
+      "objective_fair": -506.9133,
+      "shortfall": 28.55,
+      "overload": 0.0,
+      "runtime_s": 0.2277
+    }
+  },
+  {
+    "scenario_id": "SC_266",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 25.29,
+      "objective_fair": -1564.9482,
+      "shortfall": 18.24,
+      "overload": 12.69,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -528.4393,
+      "objective_fair": -528.4393,
+      "shortfall": 30.93,
+      "overload": 0.0,
+      "runtime_s": 0.4269
+    }
+  },
+  {
+    "scenario_id": "SC_267",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 25.61,
+      "objective_fair": -1016.7175,
+      "shortfall": 20.16,
+      "overload": 6.41,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -485.1754,
+      "objective_fair": -485.1754,
+      "shortfall": 26.57,
+      "overload": 0.0,
+      "runtime_s": 10.5901
+    }
+  },
+  {
+    "scenario_id": "SC_268",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 22.85,
+      "objective_fair": -1173.2198,
+      "shortfall": 17.52,
+      "overload": 8.77,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -463.2909,
+      "objective_fair": -463.2909,
+      "shortfall": 26.29,
+      "overload": 0.0,
+      "runtime_s": 2.4626
+    }
+  },
+  {
+    "scenario_id": "SC_269",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 24.44,
+      "objective_fair": -820.9242,
+      "shortfall": 18.28,
+      "overload": 5.36,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -364.1573,
+      "objective_fair": -364.1573,
+      "shortfall": 23.64,
+      "overload": 0.0,
+      "runtime_s": 30.0441
+    }
+  },
+  {
+    "scenario_id": "SC_270",
+    "scenario_type": "Heavy",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 22.26,
+      "objective_fair": -758.4546,
+      "shortfall": 16.72,
+      "overload": 4.82,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -342.7574,
+      "objective_fair": -342.7574,
+      "shortfall": 21.54,
+      "overload": 0.0,
+      "runtime_s": 2.0662
+    }
+  },
+  {
+    "scenario_id": "SC_271",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.65,
+      "objective_fair": -1321.5153,
+      "shortfall": 36.98,
+      "overload": 6.13,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -799.2309,
+      "objective_fair": -799.2333,
+      "shortfall": 43.1101,
+      "overload": 0.0,
+      "runtime_s": 3.8656
+    }
+  },
+  {
+    "scenario_id": "SC_272",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 18.3,
+      "objective_fair": -1766.8632,
+      "shortfall": 42.24,
+      "overload": 9.99,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -960.2826,
+      "objective_fair": -960.2826,
+      "shortfall": 52.23,
+      "overload": 0.0,
+      "runtime_s": 0.353
+    }
+  },
+  {
+    "scenario_id": "SC_273",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 19.2,
+      "objective_fair": -1841.2348,
+      "shortfall": 42.99,
+      "overload": 10.74,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -970.0554,
+      "objective_fair": -970.0554,
+      "shortfall": 53.73,
+      "overload": 0.0,
+      "runtime_s": 8.3014
+    }
+  },
+  {
+    "scenario_id": "SC_274",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 18.24,
+      "objective_fair": -1569.4352,
+      "shortfall": 39.31,
+      "overload": 8.46,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -870.7001,
+      "objective_fair": -870.7001,
+      "shortfall": 47.77,
+      "overload": 0.0,
+      "runtime_s": 3.0451
+    }
+  },
+  {
+    "scenario_id": "SC_275",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.3,
+      "objective_fair": -1809.5654,
+      "shortfall": 43.73,
+      "overload": 9.65,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1012.8034,
+      "objective_fair": -1012.8034,
+      "shortfall": 53.38,
+      "overload": 0.0,
+      "runtime_s": 0.3333
+    }
+  },
+  {
+    "scenario_id": "SC_276",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 16.48,
+      "objective_fair": -1398.9353,
+      "shortfall": 44.57,
+      "overload": 5.77,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -928.3682,
+      "objective_fair": -928.3682,
+      "shortfall": 50.34,
+      "overload": 0.0,
+      "runtime_s": 0.4847
+    }
+  },
+  {
+    "scenario_id": "SC_277",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.57,
+      "objective_fair": -1875.2291,
+      "shortfall": 49.44,
+      "overload": 9.53,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1109.7213,
+      "objective_fair": -1109.7213,
+      "shortfall": 58.97,
+      "overload": 0.0,
+      "runtime_s": 0.6958
+    }
+  },
+  {
+    "scenario_id": "SC_278",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 18.96,
+      "objective_fair": -1805.0913,
+      "shortfall": 34.85,
+      "overload": 11.55,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -872.5538,
+      "objective_fair": -872.5538,
+      "shortfall": 46.4,
+      "overload": 0.0,
+      "runtime_s": 0.3872
+    }
+  },
+  {
+    "scenario_id": "SC_279",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.59,
+      "objective_fair": -1639.6016,
+      "shortfall": 32.95,
+      "overload": 10.39,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -790.9566,
+      "objective_fair": -790.9566,
+      "shortfall": 43.34,
+      "overload": 0.0,
+      "runtime_s": 15.2069
+    }
+  },
+  {
+    "scenario_id": "SC_280",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.02,
+      "objective_fair": -1690.729,
+      "shortfall": 50.07,
+      "overload": 7.6,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1073.775,
+      "objective_fair": -1073.7751,
+      "shortfall": 57.67,
+      "overload": 0.0,
+      "runtime_s": 1.4407
+    }
+  },
+  {
+    "scenario_id": "SC_281",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.74,
+      "objective_fair": -1976.8177,
+      "shortfall": 43.61,
+      "overload": 11.44,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1057.551,
+      "objective_fair": -1057.551,
+      "shortfall": 55.05,
+      "overload": 0.0,
+      "runtime_s": 0.3927
+    }
+  },
+  {
+    "scenario_id": "SC_282",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 19.66,
+      "objective_fair": -1965.6296,
+      "shortfall": 45.48,
+      "overload": 11.14,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1075.2942,
+      "objective_fair": -1075.2942,
+      "shortfall": 56.62,
+      "overload": 0.0,
+      "runtime_s": 1.7996
+    }
+  },
+  {
+    "scenario_id": "SC_283",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 16.46,
+      "objective_fair": -1750.4115,
+      "shortfall": 47.95,
+      "overload": 8.48,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1064.0929,
+      "objective_fair": -1064.0929,
+      "shortfall": 56.43,
+      "overload": 0.0,
+      "runtime_s": 0.3024
+    }
+  },
+  {
+    "scenario_id": "SC_284",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.43,
+      "objective_fair": -1653.2953,
+      "shortfall": 33.21,
+      "overload": 10.53,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -798.236,
+      "objective_fair": -798.236,
+      "shortfall": 43.74,
+      "overload": 0.0,
+      "runtime_s": 0.516
+    }
+  },
+  {
+    "scenario_id": "SC_285",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 19.31,
+      "objective_fair": -1824.6336,
+      "shortfall": 43.19,
+      "overload": 10.25,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -972.0283,
+      "objective_fair": -972.0284,
+      "shortfall": 53.44,
+      "overload": 0.0,
+      "runtime_s": 1.0701
+    }
+  },
+  {
+    "scenario_id": "SC_286",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 16.26,
+      "objective_fair": -1625.791,
+      "shortfall": 40.26,
+      "overload": 8.85,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -897.1464,
+      "objective_fair": -897.1464,
+      "shortfall": 49.11,
+      "overload": 0.0,
+      "runtime_s": 30.077
+    }
+  },
+  {
+    "scenario_id": "SC_287",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 15.62,
+      "objective_fair": -1519.8083,
+      "shortfall": 37.41,
+      "overload": 8.39,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -831.3977,
+      "objective_fair": -831.3977,
+      "shortfall": 45.8,
+      "overload": 0.0,
+      "runtime_s": 2.17
+    }
+  },
+  {
+    "scenario_id": "SC_288",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.77,
+      "objective_fair": -1579.5589,
+      "shortfall": 44.66,
+      "overload": 7.21,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -968.1833,
+      "objective_fair": -968.1856,
+      "shortfall": 51.8701,
+      "overload": 0.0,
+      "runtime_s": 0.503
+    }
+  },
+  {
+    "scenario_id": "SC_289",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.5,
+      "objective_fair": -1691.6827,
+      "shortfall": 47.69,
+      "overload": 7.84,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1031.2718,
+      "objective_fair": -1031.2718,
+      "shortfall": 55.53,
+      "overload": 0.0,
+      "runtime_s": 1.004
+    }
+  },
+  {
+    "scenario_id": "SC_290",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 19.3,
+      "objective_fair": -2155.7029,
+      "shortfall": 47.21,
+      "overload": 12.58,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1136.4965,
+      "objective_fair": -1136.4966,
+      "shortfall": 59.79,
+      "overload": 0.0,
+      "runtime_s": 0.8875
+    }
+  },
+  {
+    "scenario_id": "SC_291",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 19.45,
+      "objective_fair": -1597.6619,
+      "shortfall": 39.74,
+      "overload": 8.74,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -878.2383,
+      "objective_fair": -878.2383,
+      "shortfall": 48.58,
+      "overload": 0.0,
+      "runtime_s": 1.293
+    }
+  },
+  {
+    "scenario_id": "SC_292",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 18.16,
+      "objective_fair": -1927.8736,
+      "shortfall": 45.62,
+      "overload": 10.84,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1056.8959,
+      "objective_fair": -1056.8959,
+      "shortfall": 56.46,
+      "overload": 0.0,
+      "runtime_s": 0.8044
+    }
+  },
+  {
+    "scenario_id": "SC_293",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 18.08,
+      "objective_fair": -1340.4534,
+      "shortfall": 37.85,
+      "overload": 6.68,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -774.6354,
+      "objective_fair": -774.6354,
+      "shortfall": 44.53,
+      "overload": 0.0,
+      "runtime_s": 0.7968
+    }
+  },
+  {
+    "scenario_id": "SC_294",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.89,
+      "objective_fair": -1464.8524,
+      "shortfall": 36.21,
+      "overload": 7.69,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -816.9486,
+      "objective_fair": -816.9486,
+      "shortfall": 43.9,
+      "overload": 0.0,
+      "runtime_s": 2.2381
+    }
+  },
+  {
+    "scenario_id": "SC_295",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 17.47,
+      "objective_fair": -1979.304,
+      "shortfall": 45.65,
+      "overload": 11.2,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1075.7131,
+      "objective_fair": -1075.7131,
+      "shortfall": 56.85,
+      "overload": 0.0,
+      "runtime_s": 0.1028
+    }
+  },
+  {
+    "scenario_id": "SC_296",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 19.55,
+      "objective_fair": -2064.976,
+      "shortfall": 38.54,
+      "overload": 13.55,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -972.1304,
+      "objective_fair": -972.1304,
+      "shortfall": 52.09,
+      "overload": 0.0,
+      "runtime_s": 0.1894
+    }
+  },
+  {
+    "scenario_id": "SC_297",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 16.7,
+      "objective_fair": -1317.6958,
+      "shortfall": 35.66,
+      "overload": 6.41,
+      "runtime_s": 0.0001
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -784.2099,
+      "objective_fair": -784.21,
+      "shortfall": 42.07,
+      "overload": 0.0,
+      "runtime_s": 0.7589
+    }
+  },
+  {
+    "scenario_id": "SC_298",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 18.36,
+      "objective_fair": -1413.3621,
+      "shortfall": 31.03,
+      "overload": 8.49,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -717.7482,
+      "objective_fair": -717.7482,
+      "shortfall": 39.52,
+      "overload": 0.0,
+      "runtime_s": 1.8371
+    }
+  },
+  {
+    "scenario_id": "SC_299",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 18.37,
+      "objective_fair": -1828.3464,
+      "shortfall": 43.76,
+      "overload": 10.15,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1003.0174,
+      "objective_fair": -1003.0175,
+      "shortfall": 53.91,
+      "overload": 0.0,
+      "runtime_s": 0.3777
+    }
+  },
+  {
+    "scenario_id": "SC_300",
+    "scenario_type": "Extreme",
+    "greedy": {
+      "feasible": false,
+      "objective_value": 18.33,
+      "objective_fair": -2198.9768,
+      "shortfall": 54.29,
+      "overload": 11.67,
+      "runtime_s": 0.0
+    },
+    "lp": {
+      "feasible": true,
+      "objective_value": -1259.6156,
+      "objective_fair": -1259.6156,
+      "shortfall": 65.96,
+      "overload": 0.0,
+      "runtime_s": 1.0036
+    }
+  }
+]

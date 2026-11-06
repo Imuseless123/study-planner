@@ -1,0 +1,290 @@
+{
+  "communities": {
+    "0": [
+      "app_api",
+      "app_api_compute_risk_score",
+      "app_api_rationale_1",
+      "app_api_rationale_21",
+      "app_main",
+      "app_main_health",
+      "app_main_rationale_1",
+      "app_main_root",
+      "app_schemas",
+      "app_schemas_healthresponse",
+      "app_schemas_rationale_1",
+      "app_schemas_rationale_36",
+      "app_schemas_rationale_44",
+      "app_schemas_rationale_52",
+      "app_schemas_rationale_6",
+      "app_schemas_rationale_61",
+      "app_schemas_riskcomponents",
+      "app_schemas_riskrequest",
+      "app_schemas_riskresponse",
+      "app_schemas_riskweights",
+      "basemodel",
+      "fastapi",
+      "fastapi_middleware_cors",
+      "get",
+      "post",
+      "pydantic"
+    ],
+    "1": [
+      "integration",
+      "pytest",
+      "tests_test_api",
+      "tests_test_api_rationale_1",
+      "tests_test_api_rationale_56",
+      "tests_test_api_testhealth",
+      "tests_test_api_testhealth_test_health_ok",
+      "tests_test_api_testhealth_test_root_returns_info",
+      "tests_test_api_testriskendpoint",
+      "tests_test_api_testriskendpoint_test_boundary_returns_100",
+      "tests_test_api_testriskendpoint_test_good_habits_returns_low",
+      "tests_test_api_testriskendpoint_test_high_risk_returns_high",
+      "tests_test_api_testriskendpoint_test_required_hours_zero_is_valid",
+      "tests_test_api_testriskendpoint_test_response_has_components",
+      "tests_test_api_testriskendpoint_test_response_has_disclaimer",
+      "tests_test_api_testriskendpoint_test_validation_available_zero",
+      "tests_test_api_testriskendpoint_test_validation_missing_field",
+      "tests_test_api_testriskendpoint_test_validation_negative_required",
+      "tests_test_api_testriskendpoint_test_validation_sleep_too_high"
+    ],
+    "2": [
+      "app_calculator",
+      "app_calculator_compute_risk",
+      "app_calculator_rationale_1",
+      "app_calculator_rationale_173",
+      "app_calculator_rationale_217",
+      "app_calculator_riskresult",
+      "dataclasses",
+      "tests_test_calculator_rationale_194",
+      "tests_test_calculator_rationale_210",
+      "tests_test_calculator_rationale_226",
+      "tests_test_calculator_rationale_238",
+      "tests_test_calculator_testcomputerisk",
+      "tests_test_calculator_testcomputerisk_test_boundary_all_max",
+      "tests_test_calculator_testcomputerisk_test_components_sum_present",
+      "tests_test_calculator_testcomputerisk_test_good_habits_scenario",
+      "tests_test_calculator_testcomputerisk_test_high_risk_scenario",
+      "tests_test_calculator_testcomputerisk_test_weights_in_result"
+    ],
+    "3": [
+      "app_calculator_normalize_deadline_proximity",
+      "app_calculator_rationale_108",
+      "tests_test_calculator",
+      "tests_test_calculator_rationale_1",
+      "tests_test_calculator_rationale_33",
+      "tests_test_calculator_testnormalizedeadlineproximity",
+      "tests_test_calculator_testnormalizedeadlineproximity_test_deadline_in_2_days",
+      "tests_test_calculator_testnormalizedeadlineproximity_test_deadline_today",
+      "tests_test_calculator_testnormalizedeadlineproximity_test_deadline_tomorrow",
+      "tests_test_calculator_testnormalizedeadlineproximity_test_far_deadline",
+      "tests_test_calculator_testnormalizedeadlineproximity_test_past_deadline_returns_max",
+      "tests_test_calculator_testweights",
+      "tests_test_calculator_testweights_test_weights_match_literature",
+      "tests_test_calculator_testweights_test_weights_sum_to_one"
+    ],
+    "4": [
+      "fastapi_testclient",
+      "fixture",
+      "pathlib",
+      "sys",
+      "tests_conftest",
+      "tests_conftest_boundary_payload",
+      "tests_conftest_client",
+      "tests_conftest_good_habits_payload",
+      "tests_conftest_high_risk_payload",
+      "tests_conftest_rationale_1",
+      "tests_conftest_rationale_23",
+      "tests_conftest_rationale_35",
+      "tests_conftest_rationale_47"
+    ],
+    "5": [
+      "app_calculator_calculate_risk_score",
+      "app_calculator_rationale_186",
+      "tests_test_calculator_testcalculateriskscore",
+      "tests_test_calculator_testcalculateriskscore_test_all_one_inputs",
+      "tests_test_calculator_testcalculateriskscore_test_all_zero_inputs",
+      "tests_test_calculator_testcalculateriskscore_test_only_deadline_proximity",
+      "tests_test_calculator_testcalculateriskscore_test_only_sleep_deficit",
+      "tests_test_calculator_testcalculateriskscore_test_only_study_inconsistency",
+      "tests_test_calculator_testcalculateriskscore_test_only_workload_density"
+    ],
+    "6": [
+      "app_calculator_classify_risk",
+      "app_calculator_rationale_152",
+      "tests_test_calculator_testclassifyrisk",
+      "tests_test_calculator_testclassifyrisk_test_high_100",
+      "tests_test_calculator_testclassifyrisk_test_high_61",
+      "tests_test_calculator_testclassifyrisk_test_low_boundary_0",
+      "tests_test_calculator_testclassifyrisk_test_low_boundary_30",
+      "tests_test_calculator_testclassifyrisk_test_moderate_31",
+      "tests_test_calculator_testclassifyrisk_test_moderate_boundary_60"
+    ],
+    "7": [
+      "app_calculator_normalize_sleep_deficit",
+      "app_calculator_rationale_62",
+      "tests_test_calculator_testnormalizesleepdeficit",
+      "tests_test_calculator_testnormalizesleepdeficit_test_capped_above_max",
+      "tests_test_calculator_testnormalizesleepdeficit_test_half_deficit_at_5h",
+      "tests_test_calculator_testnormalizesleepdeficit_test_max_deficit_at_3h",
+      "tests_test_calculator_testnormalizesleepdeficit_test_negative_raises",
+      "tests_test_calculator_testnormalizesleepdeficit_test_no_deficit_at_7h",
+      "tests_test_calculator_testnormalizesleepdeficit_test_no_deficit_at_8h"
+    ],
+    "8": [
+      "app_calculator_normalize_workload_density",
+      "app_calculator_rationale_85",
+      "tests_test_calculator_testnormalizeworkloaddensity",
+      "tests_test_calculator_testnormalizeworkloaddensity_test_capped_above_available",
+      "tests_test_calculator_testnormalizeworkloaddensity_test_full_density",
+      "tests_test_calculator_testnormalizeworkloaddensity_test_half_density",
+      "tests_test_calculator_testnormalizeworkloaddensity_test_low_density",
+      "tests_test_calculator_testnormalizeworkloaddensity_test_negative_required_raises",
+      "tests_test_calculator_testnormalizeworkloaddensity_test_zero_available_returns_max"
+    ],
+    "9": [
+      "app_calculator_normalize_study_inconsistency",
+      "app_calculator_rationale_128",
+      "tests_test_calculator_testnormalizestudyinconsistency",
+      "tests_test_calculator_testnormalizestudyinconsistency_test_capped_above_max",
+      "tests_test_calculator_testnormalizestudyinconsistency_test_half_inconsistent",
+      "tests_test_calculator_testnormalizestudyinconsistency_test_max_inconsistent",
+      "tests_test_calculator_testnormalizestudyinconsistency_test_negative_raises",
+      "tests_test_calculator_testnormalizestudyinconsistency_test_perfectly_consistent"
+    ],
+    "10": [
+      "app_init"
+    ],
+    "11": [
+      "tests_init"
+    ]
+  },
+  "cohesion": {
+    "0": 0.12923076923076923,
+    "1": 0.1111111111111111,
+    "2": 0.15441176470588236,
+    "3": 0.1978021978021978,
+    "4": 0.19230769230769232,
+    "5": 0.3611111111111111,
+    "6": 0.3611111111111111,
+    "7": 0.3611111111111111,
+    "8": 0.3611111111111111,
+    "9": 0.39285714285714285,
+    "10": 1.0,
+    "11": 1.0
+  },
+  "gods": [
+    {
+      "id": "app_calculator_compute_risk",
+      "label": "compute_risk()",
+      "degree": 17
+    },
+    {
+      "id": "tests_test_api_testriskendpoint",
+      "label": "TestRiskEndpoint",
+      "degree": 12
+    },
+    {
+      "id": "app_calculator_normalize_sleep_deficit",
+      "label": "normalize_sleep_deficit()",
+      "degree": 10
+    },
+    {
+      "id": "app_calculator_normalize_workload_density",
+      "label": "normalize_workload_density()",
+      "degree": 10
+    },
+    {
+      "id": "app_calculator_classify_risk",
+      "label": "classify_risk()",
+      "degree": 10
+    },
+    {
+      "id": "app_calculator_calculate_risk_score",
+      "label": "calculate_risk_score()",
+      "degree": 10
+    },
+    {
+      "id": "app_api_compute_risk_score",
+      "label": "compute_risk_score()",
+      "degree": 9
+    },
+    {
+      "id": "app_calculator_normalize_deadline_proximity",
+      "label": "normalize_deadline_proximity()",
+      "degree": 9
+    },
+    {
+      "id": "app_calculator_normalize_study_inconsistency",
+      "label": "normalize_study_inconsistency()",
+      "degree": 9
+    },
+    {
+      "id": "tests_test_calculator_testnormalizesleepdeficit",
+      "label": "TestNormalizeSleepDeficit",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "compute_risk_score()",
+      "target": "RiskResult",
+      "source_files": [
+        "app/api.py",
+        "app/calculator.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "compute_risk_score()",
+      "target": "compute_risk()",
+      "source_files": [
+        "app/api.py",
+        "app/calculator.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "compute_risk_score()",
+      "target": "RiskComponents",
+      "source_files": [
+        "app/api.py",
+        "app/schemas.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source"
+    },
+    {
+      "source": "compute_risk_score()",
+      "target": "RiskRequest",
+      "source_files": [
+        "app/api.py",
+        "app/schemas.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source"
+    },
+    {
+      "source": "compute_risk_score()",
+      "target": "RiskResponse",
+      "source_files": [
+        "app/api.py",
+        "app/schemas.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

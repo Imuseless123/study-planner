@@ -25,3 +25,13 @@ dist/
 
 # Docker
 postgres_data/
+
+/graphify-out
+.graphifyignore
+/KLTN
+/evaluate
+/frontend/graphify-out
+/docs/graphify-out
+/backend/graphify-out
+/lp-solver/graphify-out
+/risk-indicator/graphify-out

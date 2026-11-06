@@ -1,0 +1,7 @@
+Metric,Greedy (Baseline),LP Solver (Proposed),Paired T-test p-value
+Feasibility Rate (%),70.0,100.0,—
+Avg Deadline Shortfall (h),7.8845,10.5794,< 0.001
+Avg Overload Hours (h),5.0361,0.0,< 0.001
+"Avg Objective Value (raw: LP Z, Greedy raw hours — chỉ định tính)",23.9477,-163.456,< 0.001
+Avg Objective Fair (cùng công thức Z — so sánh chính),-633.865,-163.4563,< 0.001
+Avg Runtime (s),0.0,5.1708,< 0.001
